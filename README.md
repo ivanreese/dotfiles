@@ -1,5 +1,7 @@
 # Ivan’s dotfiles
-Shamelessly ripped from [Mathias](https://github.com/mathiasbynens/dotfiles). I will someday replace this with a fork.
+Shamelessly ripped from [Mathias](https://github.com/mathiasbynens/dotfiles)
+and [Gary Bernhardt](https://github.com/garybernhardt/dotfiles).
+I will someday replace this with a fork.
 
 ## Installation
 
