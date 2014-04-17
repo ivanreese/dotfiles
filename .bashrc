@@ -2,8 +2,14 @@
 
 alias cda='cd /Users/admin/Dropbox/Assets\ and\ Resources/Ivan/Apps'
 alias g='gulp --require coffee-script'
-alias c='coffee -o . -j script.js -wc coffee'
-alias s='sass --watch scss/application.scss:style.css'
+
+alias c='coffee -j app.js -wc .'
+alias co='coffee -o . -j script.js -wc coffee'
+alias shopc='coffee -o assets -j app.js -wc coffee'
+
+alias s='sass --watch app.scss:app.css'
+alias so='sass --watch scss/app.scss:style.css'
+alias shops='sass --watch scss/app.scss:assets/app.css.liquid'
 
 # Add color to ls
 alias ls='ls -G'
