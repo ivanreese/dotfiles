@@ -43,3 +43,4 @@ Icon
 ################################
 .env
 .powenv
+secrets.yml
