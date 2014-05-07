@@ -1,6 +1,6 @@
 # ALIASES
 
-alias cda='cd /Users/admin/Dropbox\ \(CDIG\)/Assets\ and\ Resources/Ivan/Apps'
+alias cda='cd /Users/admin/Dropbox\ \(CDIG\)/Ivan/Apps'
 alias g='gulp --require coffee-script'
 
 alias c='coffee -j app.js -wc .'
