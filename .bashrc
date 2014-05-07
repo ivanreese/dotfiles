@@ -1,7 +1,9 @@
 # ALIASES
 
+eval "$(hub alias -s)"
+
 alias cda='cd /Users/admin/Dropbox\ \(CDIG\)/Ivan/Apps'
-alias g='gulp --require coffee-script'
+alias gulp='gulp --require coffee-script'
 
 alias c='coffee -j app.js -wc .'
 alias co='coffee -o . -j script.js -wc coffee'
