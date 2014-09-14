@@ -37,6 +37,9 @@ export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:${PATH}
 # NPM
 export PATH=/usr/local/share/npm/bin:${PATH}
 
+# Heroku
+export PATH=/usr/local/heroku/bin:${PATH}
+
 
 # VARS
 
