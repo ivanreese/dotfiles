@@ -102,7 +102,7 @@ grb_git_prompt() {
         # local GIT_PROMPT=`__git_ps1 "(%s|${SINCE_LAST_COMMIT})"`
 				
 				# Nah, I don't care about the branch today
-        local GIT_PROMPT=SINCE_LAST_COMMIT
+        local GIT_PROMPT="${SINCE_LAST_COMMIT}"
 				
 				echo ${GIT_PROMPT}
     fi
