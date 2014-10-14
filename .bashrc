@@ -100,11 +100,10 @@ grb_git_prompt() {
         
 				# The __git_ps1 function inserts the current git branch where %s is
         # local GIT_PROMPT=`__git_ps1 "(%s|${SINCE_LAST_COMMIT})"`
+				# echo ${GIT_PROMPT}
 				
 				# Nah, I don't care about the branch today
-        local GIT_PROMPT="${SINCE_LAST_COMMIT}"
-				
-				echo ${GIT_PROMPT}
+				echo ${SINCE_LAST_COMMIT}
     fi
 }
 export PS1="\h:\W\$(grb_git_prompt) \u\$ "
