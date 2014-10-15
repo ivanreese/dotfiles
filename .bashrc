@@ -89,9 +89,9 @@ grb_git_prompt() {
     local g="$(__gitdir)"
     if [ -n "$g" ]; then
         local MINUTES_SINCE_LAST_COMMIT=`minutes_since_last_commit`
-        if [ "$MINUTES_SINCE_LAST_COMMIT" -gt 60 ]; then
+        if [ "$MINUTES_SINCE_LAST_COMMIT" -gt 1440 ]; then
             local COLOR=${RED}
-        elif [ "$MINUTES_SINCE_LAST_COMMIT" -gt 20 ]; then
+        elif [ "$MINUTES_SINCE_LAST_COMMIT" -gt 60 ]; then
             local COLOR=${YELLOW}
         else
             local COLOR=${GREEN}
