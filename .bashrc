@@ -1,4 +1,4 @@
-. ~/bin/bash_colors.sh
+. ~/.bin/bash_colors.sh
 
 # ALIASES
 
@@ -105,7 +105,7 @@ grb_git_prompt() {
 }
 export PS1="\h:\W\$(grb_git_prompt) \u\$ "
 
-source ~/bin/git-completion.bash
+source ~/.bin/git-completion.bash
 
 # Original prompt:
 # export PS1="\h:\W \u\$"
