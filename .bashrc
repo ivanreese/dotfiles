@@ -31,6 +31,9 @@ alias sps='rspec -c spec/services'
 
 # PATHS
 
+# My own stuff
+export PATH=~/.bin/:${PATH}
+
 # Search usr/local/bin before /bin (etc)
 export PATH=/usr/local/bin:${PATH}
 
