@@ -32,19 +32,19 @@ alias sps='rspec -c spec/services'
 # PATHS
 
 # My own stuff
-export PATH=~/.bin/:${PATH}
+export PATH="~/.bin:$PATH"
 
 # Search usr/local/bin before /bin (etc)
 export PATH=/usr/local/bin:${PATH}
 
-# Postgres.app
-export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:${PATH}
-
 # NPM
-export PATH=/usr/local/share/npm/bin:${PATH}
+export PATH=$PATH:/usr/local/share/npm/bin
 
 # Heroku
-export PATH=/usr/local/heroku/bin:${PATH}
+export PATH=$PATH:/usr/local/heroku/bin
+
+# Postgres.app
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 
 # VARS
