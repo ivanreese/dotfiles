@@ -1,14 +1,22 @@
 . ~/.bin/bash_colors.sh
 
-# ALIASES
-
+# Set up hub
 eval "$(hub alias -s)"
 
+# ALIASES
+
+# Quick links
 alias cda='cd /Users/admin/Dropbox\ \(CDIG\)/Ivan/Apps'
 alias cds='cd /Users/admin/sites'
-alias gulp='gulp --require coffee-script'
 
+# Make it easy to compile coffeescript
 alias c='coffee -wc .'
+
+# A nice shortcut for pushing a WIP to github and taking a look at it
+alias wip='git aa && git cim "WIP" && git push && hub browse'
+
+# Use coffeescript with gulp
+alias gulp='gulp --require coffee-script'
 
 # Add color to ls
 alias ls='ls -G'
@@ -16,9 +24,10 @@ alias ll='ls -lG'
 alias la='ls -aG'
 alias lag='ls -laG'
 
-alias rbgrep="grep --include='*.rb' $*" # Ruby grep — (does $* mean all args?)
+# Keep rails handy
 alias r="rails"
 
+# We sure like our specs
 alias rspec='rspec -c' # Color
 alias sp='rspec -c spec'
 alias sps='rspec -c spec/services'
@@ -72,7 +81,7 @@ shopt -s cdspell
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
 # * Recursive globbing, e.g. `echo **/*.txt`
 for option in autocd globstar; do
-	shopt -s "$option" 2> /dev/null
+  shopt -s "$option" 2> /dev/null
 done
 
 # Git prompt components
@@ -96,9 +105,9 @@ grb_git_prompt() {
         fi
         local SINCE_LAST_COMMIT="${COLOR}$(minutes_since_last_commit)m${NORMAL}"
         
-				# The __git_ps1 function inserts the current git branch where %s is
+        # The __git_ps1 function inserts the current git branch where %s is
         local GIT_PROMPT=`__git_ps1 "(%s|${SINCE_LAST_COMMIT})"`
-				echo ${GIT_PROMPT}
+        echo ${GIT_PROMPT}
     fi
 }
 export PS1="\h:\W\$(grb_git_prompt) \u\$ "
