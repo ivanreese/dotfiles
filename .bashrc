@@ -6,8 +6,8 @@ eval "$(hub alias -s)"
 # ALIASES
 
 # Quick links
-alias cda='cd /Users/admin/Dropbox\ \(CDIG\)/Ivan/Apps'
-alias cds='cd /Users/admin/sites'
+alias cda='cd ~/Dropbox\ \(CDIG\)/Ivan/Apps'
+alias cds='cd ~/sites'
 
 # Make it easy to compile coffeescript
 alias c='coffee -wc .'
@@ -104,7 +104,7 @@ grb_git_prompt() {
             local COLOR=${GREEN}
         fi
         local SINCE_LAST_COMMIT="${COLOR}$(minutes_since_last_commit)m${NORMAL}"
-        
+
         # The __git_ps1 function inserts the current git branch where %s is
         local GIT_PROMPT=`__git_ps1 "(%s|${SINCE_LAST_COMMIT})"`
         echo ${GIT_PROMPT}
