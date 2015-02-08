@@ -26,7 +26,7 @@
 	b = branch
 	ds = diff --stat=160,120
 	dh1 = diff HEAD~1
-	
+
 	# Fancy logging.
 	#	 h = head
 	#	 hp = head with patch
@@ -41,7 +41,7 @@
 	ra = !git r --all
 	l = "!source ~/.githelpers && pretty_git_log"
 	la = !git l --all
-	
+
 	# http://fredkschott.com/post/2014/02/git-log-is-so-2005/
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 
@@ -49,7 +49,7 @@
 	tool = vimdiff
 
 [core]
-	editor = mate -w
+	editor = atom
 	excludesfile = ~/.gitignore_global
 
 [credential]
