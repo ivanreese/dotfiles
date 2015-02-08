@@ -18,11 +18,8 @@ alias wip='git aa && git cim "WIP" && git push && hub browse'
 # Use coffeescript with gulp
 alias gulp='gulp --require coffee-script'
 
-# Add color to ls
-alias ls='ls -G'
-alias ll='ls -lG'
-alias la='ls -aG'
-alias lag='ls -laG'
+# Use my custom ls
+alias ls='ls -laG'
 
 # Keep rails handy
 alias r="rails"
