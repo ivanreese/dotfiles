@@ -9,6 +9,9 @@ eval "$(hub alias -s)"
 alias cda='cd ~/Dropbox\ \(CDIG\)/Ivan/Apps'
 alias cds='cd ~/sites'
 
+# rlwrap figwheel, please
+alias fig='rlwrap lein figwheel'
+
 # Make it easy to compile coffeescript
 alias c='coffee -wc .'
 
