@@ -47,7 +47,7 @@ export PATH=$PATH:/usr/local/share/npm/bin
 export PATH=$PATH:/usr/local/heroku/bin
 
 # Postgres.app
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 
 # VARS
