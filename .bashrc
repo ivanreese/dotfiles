@@ -12,6 +12,9 @@ alias cds='cd ~/sites'
 # rlwrap figwheel, please
 alias fig='rlwrap lein figwheel'
 
+# Make it easy to compile SCSS in my CLJS projects
+s='sass --watch scss:resources/public/styles --precision 1 --style compressed'
+
 # Make it easy to compile coffeescript
 alias c='coffee -wc .'
 
