@@ -1,5 +1,3 @@
-. ~/.bin/bash_colors.sh
-
 # Set up hub
 eval "$(hub alias -s)"
 
@@ -32,13 +30,12 @@ alias r="rails"
 
 # We sure like our specs
 alias rspec='rspec -c' # Color
-alias sp='rspec -c spec'
-alias sps='rspec -c spec/services'
+
 
 # PATHS
 
 # My own stuff
-export PATH="~/.bin:$PATH"
+export PATH="$PATH:~/.bin"
 
 # Search usr/local/bin before /bin (etc)
 export PATH=/usr/local/bin:${PATH}
@@ -87,44 +84,17 @@ for option in autocd globstar; do
   shopt -s "$option" 2> /dev/null
 done
 
-# Git prompt components
-function minutes_since_last_commit {
-    now=`date +%s`
-    last_commit=`git log --pretty=format:'%at' -1`
-    seconds_since_last_commit=$((now-last_commit))
-    minutes_since_last_commit=$((seconds_since_last_commit/60))
-    echo $minutes_since_last_commit
-}
-grb_git_prompt() {
-    local g="$(__gitdir)"
-    if [ -n "$g" ]; then
-        local MINUTES_SINCE_LAST_COMMIT=`minutes_since_last_commit`
-        if [ "$MINUTES_SINCE_LAST_COMMIT" -gt 1440 ]; then
-            local COLOR=${RED}
-        elif [ "$MINUTES_SINCE_LAST_COMMIT" -gt 60 ]; then
-            local COLOR=${YELLOW}
-        else
-            local COLOR=${GREEN}
-        fi
-        local SINCE_LAST_COMMIT="${COLOR}$(minutes_since_last_commit)m${NORMAL}"
+# Set a minimal prompt
+export PS1="\W "
 
-        # The __git_ps1 function inserts the current git branch where %s is
-        local GIT_PROMPT=`__git_ps1 "(%s|${SINCE_LAST_COMMIT})"`
-        echo ${GIT_PROMPT}
-    fi
-}
-export PS1="\h:\W\$(grb_git_prompt) \u\$ "
-
+# Can't remember what this does
 source ~/.bin/git-completion.bash
 
-# Original prompt:
-# export PS1="\h:\W \u\$"
 
 # OTHER HELPFUL STUFF
 
 # rbenv: To enable shims and autocompletion
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# Helper functions
-gd() { git diff $* | view -; }
-gdc() { gd --cached $*; }
+# Finally, clear the login message
+clear
