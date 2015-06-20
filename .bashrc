@@ -85,7 +85,7 @@ for option in autocd globstar; do
 done
 
 # Set a minimal prompt
-export PS1="\W "
+export PS1="\W 🐌  "
 
 # Can't remember what this does
 source ~/.bin/git-completion.bash
