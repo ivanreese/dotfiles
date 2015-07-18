@@ -49,6 +49,8 @@ export PATH=$PATH:/usr/local/heroku/bin
 # Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
+# Java
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # VARS
 
