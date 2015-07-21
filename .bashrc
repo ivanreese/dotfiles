@@ -4,8 +4,8 @@ eval "$(hub alias -s)"
 # ALIASES
 
 # Quick links
-alias cda='cd ~/Dropbox\ \(CDIG\)/Ivan/Apps'
-alias cds='cd ~/sites'
+alias cda='cd ~/Work'
+alias cds='cd ~/Sites'
 
 # rlwrap figwheel, please
 alias fig='rlwrap lein figwheel'
