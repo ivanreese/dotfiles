@@ -19,9 +19,6 @@ alias c='coffee -wc .'
 # A nice shortcut for pushing a WIP to github and taking a look at it
 alias wip='git aa && git cim "WIP" && git push && hub browse'
 
-# Use coffeescript with gulp
-alias gulp='gulp --require coffee-script'
-
 # Use my custom ls
 alias ls='ls -laG'
 
