@@ -54,9 +54,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # rbenv: To use Homebrew's directories rather than ~/.rbenv
 export RBENV_ROOT=/usr/local/var/rbenv
 
-# NVM
-export NVM_DIR=~/.nvm
-
 # Improve coloring?
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
@@ -66,6 +63,7 @@ export HISTCONTROL=erasedups
 
 # Store 10k history entries
 export HISTSIZE=10000
+
 
 # BASH OPTIONS
 
@@ -91,8 +89,6 @@ export PS1="\W 🐌  "
 # Can't remember what this does
 source ~/.bin/git-completion.bash
 
-# Set up nvm
-source $(brew --prefix nvm)/nvm.sh
 
 # OTHER HELPFUL STUFF
 
