@@ -95,5 +95,9 @@ source ~/.bin/git-completion.bash
 # rbenv: To enable shims and autocompletion
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# NVM
+export NVM_DIR="/Users/admin/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # Finally, clear the login message
 clear
