@@ -19,6 +19,12 @@ alias c='coffee -wc .'
 # A nice shortcut for pushing a WIP to github and taking a look at it
 alias wip='git aa && git cim "WIP" && git push && hub browse'
 
+# Correct some common git typos
+alias gits=`git s`
+alias gitaa=`git aa`
+alias gitr=`git r`
+alias gitra=`git ra`
+
 # Use my custom ls
 alias ls='ls -laG'
 
