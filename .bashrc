@@ -35,7 +35,7 @@ alias r="rails"
 alias rspec='rspec -c' # Color
 
 
-# PATHS
+# PATHS & VARS
 
 # My own stuff
 export PATH="$PATH:~/.bin"
@@ -51,11 +51,10 @@ export PATH=$PATH:/usr/local/heroku/bin
 
 # Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+export PGDATA="/Users/admin/Library/Application Support/Postgres/var-9.4"
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
-
-# VARS
 
 # rbenv: To use Homebrew's directories rather than ~/.rbenv
 export RBENV_ROOT=/usr/local/var/rbenv
