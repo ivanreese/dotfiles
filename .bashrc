@@ -1,3 +1,5 @@
+clear
+
 # Set up hub
 eval "$(hub alias -s)"
 
