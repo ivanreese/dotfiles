@@ -23,10 +23,10 @@ alias c='coffee -wc .'
 alias wip='git aa && git cim "WIP" && git push && hub browse'
 
 # Correct some common git typos
-alias gits=`git s`
-alias gitaa=`git aa`
-alias gitr=`git r`
-alias gitra=`git ra`
+alias gits='git s'
+alias gitaa='git aa'
+alias gitr='git r'
+alias gitra='git ra'
 
 # Use my custom ls
 alias ls='ls -laG'
