@@ -94,8 +94,8 @@ done
 # Set a minimal prompt
 export PS1="\W 🐌  "
 
-# Can't remember what this does
-source ~/.bin/git-completion.bash
+# Can't remember what this does, but disabled because weirdness
+# source ~/.bin/git-completion.bash
 
 
 # OTHER HELPFUL STUFF
