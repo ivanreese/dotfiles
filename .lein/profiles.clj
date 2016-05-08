@@ -1,4 +1,4 @@
-{:user {:plugins [[lein-autoexpect "1.4.2"]
+{:user {:plugins [[lein-autoexpect "1.9.0"]
                   [lein-expectations "0.0.8"]
                   [lein-pprint "1.1.2"]
                   [lein-ancient "0.6.10"]
