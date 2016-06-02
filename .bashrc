@@ -6,11 +6,11 @@ eval "$(hub alias -s)"
 # ALIASES
 
 # Quick links
-alias cda='cd ~/Work'
+alias cdw='cd ~/Work'
 alias cds='cd ~/Sites'
-alias cdi='cd ~/Sites/ivanish'
-alias cdf='cd ~/Sites/frails'
 alias cdl='cd ~/Work/lbs'
+alias cdf='cd ~/Sites/frails'
+alias cdi='cd ~/Sites/ivanish'
 
 # rlwrap figwheel, please
 alias fig='rlwrap lein figwheel'
