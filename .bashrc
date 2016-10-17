@@ -12,8 +12,9 @@ alias cdl='cd ~/Work/lbs'
 alias cdf='cd ~/Sites/frails'
 alias cdi='cd ~/Sites/ivanish'
 
+# clean before compiling
 # rlwrap figwheel, please
-alias fig='rlwrap lein figwheel'
+alias fig='lein clean && rlwrap lein figwheel'
 
 # Make it easy to compile SCSS in my CLJS projects
 alias s='sass --watch scss:resources/public/styles --precision 1 --style compressed'
