@@ -32,6 +32,9 @@ Thumbs.db
 Icon
 
 
+# But don't exclude folders named icon
+!icon/
+
 # Thumbnails
 ._*
 
