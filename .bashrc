@@ -1,6 +1,3 @@
-# Initialize SSH keys using Keychain, fixing the "login after reboot" issue in Sierra
-ssh-add -A
-
 # Set up hub
 eval "$(hub alias -s)"
 
