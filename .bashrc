@@ -47,6 +47,9 @@ export PATH="$PATH:~/.bin"
 # Search usr/local/bin before /bin (etc)
 export PATH=/usr/local/bin:${PATH}
 
+# rbenv
+export PATH=$PATH:~/.rbenv/shims
+
 # NPM
 export PATH=$PATH:/usr/local/share/npm/bin
 
@@ -59,9 +62,6 @@ export PGDATA="/Users/admin/Library/Application Support/Postgres/var-9.6"
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
-
-# rbenv: To use Homebrew's directories rather than ~/.rbenv
-export RBENV_ROOT=/usr/local/var/rbenv
 
 # Improve coloring?
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
