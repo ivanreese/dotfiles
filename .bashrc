@@ -102,7 +102,7 @@ source ~/.bin/git-completion.bash
 # OTHER HELPFUL STUFF
 
 # rbenv: To enable shims and autocompletion
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+eval "$(rbenv init -)"
 
 # NVM
 export NVM_DIR="/Users/admin/.nvm"
