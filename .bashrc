@@ -60,6 +60,9 @@ export PATH=$PATH:/usr/local/heroku/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export PGDATA="/Users/admin/Library/Application Support/Postgres/var-9.6"
 
+# bins in the current dir
+export PATH=.:${PATH}
+
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
 
