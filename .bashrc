@@ -39,6 +39,9 @@ alias rspec='rspec -c' # Color
 
 # PATHS & VARS
 
+# rbenv: To enable shims and autocompletion
+eval "$(rbenv init -)"
+
 # My own stuff
 export PATH="$PATH:~/.bin"
 
@@ -101,9 +104,6 @@ export PS1="\W 🐌  "
 
 # Not sure we want this anymore
 # source ~/.bin/git-completion.bash
-
-# rbenv: To enable shims and autocompletion
-eval "$(rbenv init -)"
 
 # Clear the login message
 clear
