@@ -17,17 +17,15 @@ alias fig='lein clean && rlwrap lein figwheel'
 # Make it easy to compile SCSS in my CLJS projects
 alias s='sass --watch scss:resources/public/styles --precision 1 --style compressed'
 
-# Make it easy to compile coffeescript
-alias c='coffee -wc .'
-
 # A nice shortcut for pushing a WIP to github and taking a look at it
 alias wip='git aa && git cim "WIP" && git push && hub browse'
 
-# Correct some common git typos
-alias gits='git s'
-alias gitaa='git aa'
-alias gitr='git r'
-alias gitra='git ra'
+# Nicer git stuff
+alias g='git'
+alias gs='git s'
+alias gaa='git aa'
+alias gr='git r'
+alias gra='git ra'
 
 # Use my custom ls
 alias ls='ls -laG'
@@ -95,21 +93,17 @@ for option in autocd globstar; do
   shopt -s "$option" 2> /dev/null
 done
 
+
+# FIN
+
 # Set a minimal prompt
 export PS1="\W 🐌  "
 
-# Can't remember what this does
-source ~/.bin/git-completion.bash
-
-
-# OTHER HELPFUL STUFF
+# Not sure we want this anymore
+# source ~/.bin/git-completion.bash
 
 # rbenv: To enable shims and autocompletion
 eval "$(rbenv init -)"
 
-# NVM
-export NVM_DIR="/Users/admin/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# Finally, clear the login message
+# Clear the login message
 clear
