@@ -9,6 +9,7 @@ alias cds='cd ~/Sites'
 alias cdl='cd ~/Work/lbs'
 alias cdf='cd ~/Sites/frails'
 alias cdi='cd ~/Sites/ivanish'
+alias npm='echo please use yarn instead of npm'
 
 # clean before compiling
 # rlwrap figwheel, please
