@@ -42,27 +42,18 @@ alias rspec='rspec -c' # Color
 # rbenv: To enable shims and autocompletion
 eval "$(rbenv init -)"
 
-# My own stuff
+# bins in my home
 export PATH="$PATH:~/.bin"
 
-# Search usr/local/bin before /bin (etc)
-# export PATH=/usr/local/bin:${PATH}
-
-# rbenv
-# export PATH=$PATH:~/.rbenv/shims
-
-# NPM
-# export PATH=$PATH:/usr/local/share/npm/bin
-
-# Heroku
-# export PATH=$PATH:/usr/local/heroku/bin
-
 # Postgres.app
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 export PGDATA="/Users/admin/Library/Application Support/Postgres/var-9.6"
 
-# bins in the current dir
-export PATH=.:${PATH}
+# yarn global
+export PATH="$(yarn global bin):$PATH"
+
+# bins in the pwd
+export PATH=".:$PATH"
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -76,6 +67,9 @@ export HISTCONTROL=erasedups
 
 # Store 10k history entries
 export HISTSIZE=10000
+
+# Set a minimal prompt
+export PS1="\W 🐌  "
 
 
 # BASH OPTIONS
@@ -98,9 +92,6 @@ done
 
 
 # FIN
-
-# Set a minimal prompt
-export PS1="\W 🐌  "
 
 # Not sure we want this anymore
 # source ~/.bin/git-completion.bash
