@@ -43,16 +43,16 @@ alias rspec='rspec -c' # Color
 export PATH="$PATH:~/.bin"
 
 # Search usr/local/bin before /bin (etc)
-export PATH=/usr/local/bin:${PATH}
+# export PATH=/usr/local/bin:${PATH}
 
 # rbenv
-export PATH=$PATH:~/.rbenv/shims
+# export PATH=$PATH:~/.rbenv/shims
 
 # NPM
-export PATH=$PATH:/usr/local/share/npm/bin
+# export PATH=$PATH:/usr/local/share/npm/bin
 
 # Heroku
-export PATH=$PATH:/usr/local/heroku/bin
+# export PATH=$PATH:/usr/local/heroku/bin
 
 # Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
