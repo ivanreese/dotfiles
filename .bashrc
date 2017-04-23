@@ -9,7 +9,6 @@ alias cds='cd ~/Sites'
 alias cdl='cd ~/Work/lbs'
 alias cdf='cd ~/Sites/frails'
 alias cdi='cd ~/Sites/ivanish'
-alias npm='echo please use yarn instead of npm'
 
 # clean before compiling
 # rlwrap figwheel, please
@@ -50,8 +49,8 @@ export PATH="$PATH:~/.bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 export PGDATA="/Users/admin/Library/Application Support/Postgres/var-9.6"
 
-# yarn global
-export PATH="$(yarn global bin):$PATH"
+# npm global
+export PATH="$(npm config get prefix):$PATH"
 
 # bins in the pwd
 export PATH=".:$PATH"
