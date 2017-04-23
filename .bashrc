@@ -22,6 +22,7 @@ alias wip='git aa && git cim "WIP" && git push && hub browse'
 
 # Nicer git stuff
 alias g='git'
+alias gp='git push'
 alias gs='git s'
 alias gaa='git aa'
 alias gr='git r'
