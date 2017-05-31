@@ -1,6 +1,7 @@
 # Set up hub
 eval "$(hub alias -s)"
 
+
 # ALIASES
 
 # Quick links
@@ -10,12 +11,8 @@ alias cdl='cd ~/Work/lbs'
 alias cdf='cd ~/Sites/frails'
 alias cdi='cd ~/Sites/ivanish'
 
-# clean before compiling
 # rlwrap figwheel, please
 alias fig='lein clean && rlwrap lein figwheel'
-
-# Make it easy to compile SCSS in my CLJS projects
-alias s='sass --watch scss:resources/public/styles --precision 1 --style compressed'
 
 # A nice shortcut for pushing a WIP to github and taking a look at it
 alias wip='git aa && git cim "WIP" && git push && hub browse'
@@ -93,9 +90,6 @@ done
 
 
 # FIN
-
-# Not sure we want this anymore
-# source ~/.bin/git-completion.bash
 
 # Clear the login message
 clear
