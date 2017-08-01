@@ -19,11 +19,18 @@ alias wip='git aa && git cim "WIP" && git push && hub browse'
 
 # Nicer git stuff
 alias g='git'
-alias gp='git push'
+alias gp='git p'
+alias gitp='git p'
 alias gs='git s'
+alias gits='git s'
 alias gaa='git aa'
+alias gitaa='git aa'
+alias gcim='git cim'
+alias gitcim='git cim'
 alias gr='git r'
+alias gitr='git r'
 alias gra='git ra'
+alias gitra='git ra'
 
 # Use my custom ls
 alias ls='ls -laG'
