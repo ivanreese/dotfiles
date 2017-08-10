@@ -32,8 +32,8 @@ alias gitr='git r'
 alias gra='git ra'
 alias gitra='git ra'
 
-# Use my custom ls
-alias ls='ls -laG'
+# Use exa https://the.exa.website
+alias ls='exa --all --long --color-scale --git'
 
 # Keep rails handy
 alias r="rails"
