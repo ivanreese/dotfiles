@@ -117,7 +117,8 @@ module.exports = {
       mapColors: {
         shell: "transparent",
         irb: "#AE1401",
-        coffee: "#834618"
+        coffee: "#834618",
+        gulp: "#CF4647"
       }
     },
     
