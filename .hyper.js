@@ -115,10 +115,12 @@ module.exports = {
     
     tabIcons: {
       mapColors: {
-        shell: "transparent",
-        irb: "#AE1401",
         coffee: "#834618",
-        gulp: "#CF4647"
+        gulp: "#CF4647",
+        irb: "#AE1401",
+        rake: "#AE1401",
+        rails: "#AE1401",
+        shell: "transparent"
       }
     },
     
