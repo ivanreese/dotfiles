@@ -75,9 +75,7 @@ export HISTSIZE=10000
 
 # Set a minimal prompt
 # export PS1="\W 🐌  " # Disabled because https://github.com/zeit/hyper/issues/1857
-export PS1=""
-
-exec 1> >(sed -r 's/^(.*)/  \1/g')
+export PS1="\W "
 
 # BASH OPTIONS
 
