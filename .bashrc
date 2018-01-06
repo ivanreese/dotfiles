@@ -77,6 +77,8 @@ export HISTSIZE=10000
 # export PS1="\W 🐌  " # Disabled because https://github.com/zeit/hyper/issues/1857
 export PS1=""
 
+exec 1> >(sed -r 's/^(.*)/  \1/g')
+
 # BASH OPTIONS
 
 # Append to the history file when exiting instead of overwriting it
