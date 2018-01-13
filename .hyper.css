@@ -2,6 +2,6 @@
 
 .tab_text { color: hsl(227, 15%, 40%) }
 .tab_textActive { color: #fff }
-.hyper_main:not(.focused) .term_term { filter: saturate(0%); }
+.hyper_main:not(.focused) { opacity: 0.5 }
 
 /* #terminal */
