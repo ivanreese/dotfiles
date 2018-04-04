@@ -8,6 +8,7 @@ eval "$(hub alias -s)"
 alias cdw='cd ~/Work'
 alias cds='cd ~/Sites'
 alias cdl='cd ~/Work/lbs'
+alias cdh='cd ~/Work/hest'
 alias cdf='cd ~/Sites/frails'
 alias cdi='cd ~/Sites/ivanish'
 
@@ -37,6 +38,7 @@ alias ls='exa --all --long --color-scale --git'
 
 # Keep rails handy
 alias r="rails"
+alias rc="rails c"
 
 # We sure like our specs
 alias rspec='rspec -c' # Color
