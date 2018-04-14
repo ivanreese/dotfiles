@@ -108,24 +108,25 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
-    
+
     hypercwd: {
       initialWorkingDirectory: "~/Work"
     },
-    
+
     tabIcons: {
       mapColors: {
         coffee: "#834618",
         gulp: "#CF4647",
         irb: "#AE1401",
+        lein: "#4C8",
         rake: "#AE1401",
         rails: "#AE1401",
         shell: "transparent"
       }
     },
-    
+
     confirmQuit: true,
-    
+
     "hyper-stylesheet": {
       "auto-reload": true
     }
