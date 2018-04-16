@@ -125,8 +125,6 @@ module.exports = {
       }
     },
 
-    confirmQuit: true,
-
     "hyper-stylesheet": {
       "auto-reload": true
     }
@@ -144,7 +142,6 @@ module.exports = {
     "hyper-focused",
     "hyperterm-close-on-left",
     "hyper-tab-icons",
-    "hyper-confirm",
     "hyperminimal",
     "hyperterm-alternatescroll",
     "hyper-stylesheet",
