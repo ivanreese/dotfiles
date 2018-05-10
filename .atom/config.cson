@@ -1,0 +1,182 @@
+"*":
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab"
+  "bracket-matcher":
+    autocompleteBrackets: false
+    wrapSelectionsInBrackets: false
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    closeEmptyWindows: false
+    disabledPackages: [
+      "about"
+      "archive-view"
+      "autocomplete-atom-api"
+      "autocomplete-snippets"
+      "autoflow"
+      "autosave"
+      "background-tips"
+      "bookmarks"
+      "deprecation-cop"
+      "dev-live-reload"
+      "exception-reporting"
+      "image-view"
+      "keybinding-resolver"
+      "language-c"
+      "language-csharp"
+      "language-git"
+      "language-go"
+      "language-java"
+      "language-less"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-property-list"
+      "language-python"
+      "language-toml"
+      "link"
+      "markdown-preview"
+      "metrics"
+      "open-on-github"
+      "package-generator"
+      "snippets"
+      "styleguide"
+      "timecop"
+      "update-package-dependencies"
+      "welcome"
+      "wrap-guide"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svg"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      ".sass-cache"
+      ".codekit-cache"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "auto-update-packages"
+      "git-diff"
+      "grammar-selector"
+      "highlight-selected"
+      "language-clojure"
+      "lisp-paredit"
+      "notifications"
+      "tree-view"
+      "sort-lines"
+      "sorter"
+      "spell-check"
+      "proto-repl"
+    ]
+    projectHome: "/Users/admin/Work"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "dracula-syntax"
+    ]
+    titleBar: "hidden"
+  editor:
+    fontFamily: "inconsolata"
+    fontSize: 19
+    preferredLineLength: 10000
+    scrollPastEnd: true
+    tabType: "soft"
+    undoGroupingInterval: 1
+  "exception-reporting":
+    userId: "908f6f61-c318-4131-b12d-2753d893f074"
+  "find-and-replace":
+    scrollToResultOnLiveSearch: true
+  "fuzzy-finder":
+    ignoredNames: [
+      "node_modules"
+    ]
+  "highlight-selected":
+    ignoreCase: true
+  "line-ending-selector":
+    defaultLineEnding: "LF"
+  "lisp-paredit":
+    indentationForms: [
+      "try"
+      "catch"
+      "finally"
+      "let"
+      "are"
+      "/^def.*/"
+      "fn"
+      "cond"
+      "if"
+      "if-let"
+      "for"
+      "/when.*/"
+      "testing"
+      "doseq"
+      "dotimes"
+      "loop"
+      "ns"
+    ]
+    strict: false
+  "one-dark-ui":
+    hideDockButtons: true
+  parinfer:
+    "file-extensions": [
+      ".boot"
+      ".cl"
+      ".clj"
+      ".cljc"
+      ".cljs"
+      ".edn"
+      ".el"
+      ".lfe"
+      ".lisp"
+      ".lsp"
+      ".rkt"
+      ".scm"
+    ]
+    "force-balance?": false
+    "show-open-file-dialog?": false
+    "use-smart-mode?": true
+  "proto-repl":
+    autoPrettyPrint: true
+    clojurePath: "/usr/local/bin/clj"
+    displayHelpText: false
+    openReplInRightPane: false
+    preferredRepl: [
+      "clojure"
+    ]
+  "show-invisibles-plus":
+    show: false
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.html.basic"
+      "text.html.erb"
+      "source.gfm"
+    ]
+  "status-bar":
+    cursorPositionFormat: "%L,%C"
+    selectionCountFormat: "%C characters in %L lines"
+  "tool-bar":
+    position: "Right"
+    visible: false
+  "tree-view":
+    focusOnReveal: false
+    hideIgnoredNames: true
+  whitespace: {}
+".basic.html.text":
+  editor:
+    softWrap: true
+".clojure.source":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    nonWordCharacters: "()\"':,;~@#$%^&{}[]`"
+    softWrap: true
+    tabLength: 1
