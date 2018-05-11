@@ -22,7 +22,6 @@
       "dev-live-reload"
       "exception-reporting"
       "image-view"
-      "keybinding-resolver"
       "language-c"
       "language-csharp"
       "language-git"
@@ -84,7 +83,7 @@
     titleBar: "hidden"
   editor:
     fontFamily: "inconsolata"
-    fontSize: 19
+    fontSize: 20
     preferredLineLength: 10000
     scrollPastEnd: true
     tabType: "soft"
@@ -163,9 +162,6 @@
   "status-bar":
     cursorPositionFormat: "%L,%C"
     selectionCountFormat: "%C characters in %L lines"
-  "tool-bar":
-    position: "Right"
-    visible: false
   "tree-view":
     focusOnReveal: false
     hideIgnoredNames: true
