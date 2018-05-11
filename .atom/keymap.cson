@@ -1,5 +1,7 @@
-# Derived from: https://gist.github.com/jasongilman/d1f70507bed021b48625
-'atom-text-editor[data-grammar~="clojure"], atom-text-editor[data-grammar~="lisp"], atom-text-editor[data-grammar~="newlisp"], atom-text-editor[data-grammar~="racket"], atom-text-editor[data-grammar~="scheme"]':
+'atom-workspace':
+  'cmd-alt-n':           'proto-repl:remote-nrepl-connection'
+
+':not(ink-console) atom-text-editor[data-grammar~="clojure"]':
   'enter':               'lisp-paredit:newline'
 
   'cmd-shift-x':         'cljs:cut-sexp'
@@ -11,5 +13,8 @@
   'cmd-enter':           'proto-repl:execute-block'
   'cmd-alt-enter':       'proto-repl:execute-selected-text'
 
-'atom-workspace':
-  'cmd-alt-n':           'proto-repl:remote-nrepl-connection'
+'ink-console':
+  'enter': 'console:evaluate'
+  'cmd-enter': 'console:evaluate'
+  'shift-enter': 'console:evaluate'
+  'cmd-k': 'proto-repl:clear-repl'
