@@ -1,4 +1,9 @@
 "*":
+  Zen:
+    fullscreen: false
+    softWrap: true
+    tabs: "multiple"
+    width: 100
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
     confirmCompletion: "tab"
@@ -27,7 +32,6 @@
       "language-git"
       "language-go"
       "language-java"
-      "language-less"
       "language-make"
       "language-mustache"
       "language-objective-c"
@@ -73,8 +77,10 @@
       "sorter"
       "spell-check"
       "proto-repl"
+      "Zen"
     ]
     projectHome: "/Users/admin/Work"
+    restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -162,6 +168,9 @@
   "status-bar":
     cursorPositionFormat: "%L,%C"
     selectionCountFormat: "%C characters in %L lines"
+  tabs:
+    displayMruTabList: false
+    enableMruTabSwitching: false
   "tree-view":
     focusOnReveal: false
     hideIgnoredNames: true
