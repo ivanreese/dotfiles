@@ -3,17 +3,19 @@
     fullscreen: false
     softWrap: true
     tabs: "multiple"
-    width: 100
+    width: 2000
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
     confirmCompletion: "tab"
   "bracket-matcher":
     autocompleteBrackets: false
     wrapSelectionsInBrackets: false
+  "command-palette": {}
   core:
     allowPendingPaneItems: false
     audioBeep: false
     closeEmptyWindows: false
+    colorProfile: "srgb"
     disabledPackages: [
       "about"
       "archive-view"
@@ -51,6 +53,7 @@
       "update-package-dependencies"
       "welcome"
       "wrap-guide"
+      "keybinding-resolver"
     ]
     ignoredNames: [
       ".git"
@@ -89,8 +92,8 @@
     titleBar: "hidden"
   editor:
     fontFamily: "inconsolata"
-    fontSize: 20
-    preferredLineLength: 10000
+    fontSize: 22
+    preferredLineLength: 2000
     scrollPastEnd: true
     tabType: "soft"
     undoGroupingInterval: 1
@@ -101,6 +104,7 @@
   "fuzzy-finder":
     ignoredNames: [
       "node_modules"
+      "cljs-out"
     ]
   "highlight-selected":
     ignoreCase: true
@@ -147,6 +151,11 @@
     "force-balance?": false
     "show-open-file-dialog?": false
     "use-smart-mode?": true
+  "pretty-json":
+    grammars: [
+      "source.json"
+    ]
+    prettifyOnSaveJSON: true
   "proto-repl":
     autoPrettyPrint: true
     clojurePath: "/usr/local/bin/clj"
@@ -183,5 +192,5 @@
     autoIndent: false
     autoIndentOnPaste: false
     nonWordCharacters: "()\"':,;~@#$%^&{}[]`"
-    softWrap: true
+    softWrap: false
     tabLength: 1
