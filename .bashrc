@@ -4,6 +4,17 @@ eval "$(hub alias -s)"
 
 # ALIASES
 
+# To ignore an alias... (https://remysharp.com/2018/08/23/cli-improved)
+# $ \cat # ignore aliases named "cat" - explanation: https://stackoverflow.com/a/16506263/22617
+# $ command cat # ignore functions and aliases
+
+alias cat='bat'
+alias diff='diff-so-fancy'
+alias find='fd'
+alias help='tldr'
+alias ls='exa --all --long --color-scale --git'
+alias ping='prettyping --nolegend'
+
 # Quick links
 alias cdw='cd ~/Work'
 alias cds='cd ~/Sites'
@@ -32,9 +43,6 @@ alias gr='git r'
 alias gitr='git r'
 alias gra='git ra'
 alias gitra='git ra'
-
-# Use exa https://the.exa.website
-alias ls='exa --all --long --color-scale --git'
 
 # Keep rails handy
 alias r="rails"
@@ -68,6 +76,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # Improve coloring?
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
+export COLORTERM="24bit"
 
 # Erase duplicates in history
 export HISTCONTROL=erasedups
