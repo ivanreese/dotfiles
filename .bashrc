@@ -26,8 +26,8 @@ alias cdi='cd ~/Sites/ivanish'
 # rlwrap figwheel, please
 alias fig='lein clean && rlwrap lein figwheel'
 
-# A nice shortcut for pushing a WIP to github and taking a look at it
-alias wip='git aa && git cim "WIP" && git push && hub browse'
+# A nice shortcut for pushing a WIP to github
+alias wip='git aa && git cim "∆" && git push'
 
 # Nicer git stuff
 alias g='git'
