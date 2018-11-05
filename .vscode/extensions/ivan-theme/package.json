@@ -1,14 +1,34 @@
 {
   "name": "ivan-theme",
-  "version": "1.0.0",
+  "version": "2.14.1",
   "displayName": "Ivan Theme",
+  "homepage": "",
   "description": "",
+  "publisher": "Ivan",
+  "license": "",
+  "scripts": {},
+  "maintainers": [
+    "Ivan"
+  ],
+  "contributors": [],
+  "repository": {},
+  "bugs": {},
   "engines": {
     "vscode": "^1.13.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "dark",
+    "theme",
+    "color-theme"
+  ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#3c4557",
+    "theme": "dark"
+  },
   "contributes": {
     "themes": [
       {
@@ -17,5 +37,6 @@
         "path": "./theme/ivan.json"
       }
     ]
-  }
+  },
+  "devDependencies": {}
 }
