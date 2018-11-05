@@ -1,0 +1,21 @@
+{
+  "name": "ivan-theme",
+  "version": "1.0.0",
+  "displayName": "Ivan Theme",
+  "description": "",
+  "engines": {
+    "vscode": "^1.13.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Ivan",
+        "uiTheme": "vs-dark",
+        "path": "./theme/ivan.json"
+      }
+    ]
+  }
+}
