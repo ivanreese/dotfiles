@@ -92,9 +92,9 @@
     "inputValidation.errorBackground": null,
     "inputValidation.errorBorder": "#FF5555",
     "scrollbar.shadow": "#0000",
-    "scrollbarSlider.activeBackground": null,
-    "scrollbarSlider.background": null,
-    "scrollbarSlider.hoverBackground": null,
+    "scrollbarSlider.activeBackground": "#0000",
+    "scrollbarSlider.background": "#0000",
+    "scrollbarSlider.hoverBackground": "#0000",
     "badge.foreground": "#F8F8F2",
     "badge.background": "#44475A",
     "progressBar.background": "#FF79C6",
@@ -582,7 +582,7 @@
         "wildcard.comment"
       ],
       "settings": {
-        "foreground": "#6A6D7F"
+        "foreground": "#6272A4"
       }
     },
     {
@@ -593,7 +593,7 @@
         "comment.block.documentation storage.type.class"
       ],
       "settings": {
-        "foreground": "#8BE9FD",
+        "foreground": "#6272A4",
         "fontStyle": "italic"
       }
     },
