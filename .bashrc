@@ -9,7 +9,6 @@ eval "$(hub alias -s)"
 # $ command cat # ignore functions and aliases
 
 alias cat='bat'
-alias diff='diff-so-fancy'
 alias find='fd'
 alias help='tldr'
 alias ls='exa --all --long --color-scale --git'
