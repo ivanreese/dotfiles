@@ -23,8 +23,8 @@ source bootstrap.sh
 
 ### Pull changes for stuff that might change due to external causes
 ```bash
-cp ~/.atom/config.cson .atom/config.cson
-cp ~/.atom/init.coffee .atom/init.coffee
-cp ~/.atom/keymap.cson .atom/keymap.cson
-cp ~/.atom/styles.less .atom/styles.less
+cp ~/.atom/config.cson ~/.dotfiles/.atom/config.cson
+cp ~/.atom/init.coffee ~/.dotfiles/.atom/init.coffee
+cp ~/.atom/keymap.cson ~/.dotfiles/.atom/keymap.cson
+cp ~/.atom/styles.less ~/.dotfiles/.atom/styles.less
 ```
