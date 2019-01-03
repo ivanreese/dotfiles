@@ -9,8 +9,11 @@
 brew cask install java # For clojure
 brew install awscli bat cloc clojure diff-so-fancy exa fd ffmpeg git guetzli heroku/brew/heroku hub leiningen node planck prettyping rbenv yarn
 
-# Then... (todo: add other global npm packages I need)
-npm install -g tldr
+# On my previous Mac, run this to see all the npm packages I have installed
+npm ls -g --depth=0
+
+# Then, install whichever ones I want, such as:
+npm install -g cdig/cli cljs coffeescript electron-forge gulp-cli shadow-cljs surge svgi tldr
 
 # Then...
 git clone https://github.com/ivanreese/dotfiles.git ~/.dotfiles
