@@ -6,7 +6,8 @@
 # First, install brew
 
 # Then...
-brew install awscli bat cloc clojure diff-so-fancy exa fd ffmpeg git guetzli heroku/brew/heroku hub leiningen node planck prettyping rbenv rlwrap yarn
+brew cask install java # For clojure
+brew install awscli bat cloc clojure diff-so-fancy exa fd ffmpeg git guetzli heroku/brew/heroku hub leiningen node planck prettyping rbenv yarn
 
 # Then... (todo: add other global npm packages I need)
 npm install -g tldr
