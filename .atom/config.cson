@@ -90,6 +90,7 @@
       "dracula-syntax"
     ]
     titleBar: "hidden"
+    useTreeSitterParsers: false
   editor:
     fontFamily: "inconsolata"
     fontSize: 22
