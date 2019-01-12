@@ -1,25 +1,5 @@
 # Dotfiles
-
-### Install on a fresh machine
-```bash
-
-# First, install brew
-
-# Then...
-brew cask install java # For clojure
-brew install awscli bat cloc clojure diff-so-fancy exa fd ffmpeg git guetzli heroku/brew/heroku hub leiningen node planck prettyping rbenv yarn
-
-# On my previous Mac, run this to see all the npm packages I have installed
-npm ls -g --depth=0
-
-# Then, install whichever ones I want, such as:
-npm install -g cdig/cli cljs coffeescript electron-forge gulp-cli shadow-cljs surge svgi tldr
-
-# Then...
-git clone https://github.com/ivanreese/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-source bootstrap.sh
-```
+These are my dotfiles and other stuff I'll want whenever I move in to a fresh system.
 
 ### Pull changes for stuff that might change due to external causes
 ```bash
@@ -28,3 +8,47 @@ cp ~/.atom/init.coffee ~/.dotfiles/.atom/init.coffee
 cp ~/.atom/keymap.cson ~/.dotfiles/.atom/keymap.cson
 cp ~/.atom/styles.less ~/.dotfiles/.atom/styles.less
 ```
+
+### New Machine Setup
+
+Start with Homebrew: https://brew.sh
+
+```bash
+# Install brewskies
+brew cask install java # For clojure
+brew install awscli bat cloc clojure diff-so-fancy exa fd ffmpeg git guetzli heroku/brew/heroku hub leiningen node planck prettyping rbenv yarn
+
+# Set up an SSH key
+ssh-keygen -t rsa
+pbcopy < ~/.ssh/id_rsa.pub
+open -a safari https://github.com/settings/ssh
+
+# On my previous Mac, run this to see all the npm packages I have installed
+npm ls -g --depth=0
+
+# Then, install whichever ones I want, such as:
+npm install -g cdig/cli cljs coffeescript electron-forge gulp-cli shadow-cljs surge svgi tldr
+
+# Set up ruby
+rbenv install -l # Figure out which version of ruby is the current
+ruby_version="2.6.0" # Update accordingly
+rbenv install "$ruby_version"
+rbenv global "$ruby_version"
+rbenv shell "$ruby_version"
+gem update --system
+gem install bundler
+rbenv rehash
+
+# Now set up the dotfiles
+git clone git@github.com:ivanreese/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+source bootstrap.sh
+
+# Finally, interactively set up my defaults
+bash ivans-defaults.sh
+```
+
+* puma-dev: https://github.com/puma/puma-dev
+* Webster's dictionary: http://jsomers.net/blog/dictionary
+* Inconsolata: https://github.com/google/fonts/tree/master/ofl/inconsolata
+* Transfer Divvy shortcuts from previous Mac: http://mizage.com/help/divvy/export_import.html
