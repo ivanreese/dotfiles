@@ -40,7 +40,10 @@ gem install bundler
 rbenv rehash
 
 # Now set up the dotfiles
-git clone git@github.com:ivanreese/dotfiles.git ~/.dotfiles
+# If hub asks for credentials, username is `ivanreese`
+# After it asks for creds, it'll make an OAuth token, stored in ~/.config/hub
+# I should use that token instead of a password if git asks me for a password when working with an https remote
+hub clone git@github.com:ivanreese/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 source bootstrap.sh
 
