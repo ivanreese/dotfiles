@@ -44,6 +44,7 @@ echo
 fancy_echo "UI/UX: Setting up menu bar items"
 defaults write com.apple.systemuiserver menuExtras -array \
   "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+  "/System/Library/CoreServices/Menu Extras/Volume.menu" \
   "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
   "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
   "/System/Library/CoreServices/Menu Extras/User.menu" \
