@@ -7,6 +7,8 @@ cp ~/.atom/config.cson ~/.dotfiles/.atom/config.cson
 cp ~/.atom/init.coffee ~/.dotfiles/.atom/init.coffee
 cp ~/.atom/keymap.cson ~/.dotfiles/.atom/keymap.cson
 cp ~/.atom/styles.less ~/.dotfiles/.atom/styles.less
+cp ~/.hyper.css ~/.dotfiles/.hyper.css
+cp ~/.hyper.js ~/.dotfiles/.hyper.js
 ```
 
 ### New Machine Setup
