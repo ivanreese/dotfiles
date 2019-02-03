@@ -15,6 +15,7 @@ alias ls='exa --all --long --color-scale --git'
 alias ping='prettyping --nolegend'
 
 # Quick links
+alias cdd='cd ~/.dotfiles'
 alias cdw='cd ~/Work'
 alias cds='cd ~/Sites'
 alias cdl='cd ~/Work/lbs'
