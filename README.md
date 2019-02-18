@@ -53,8 +53,13 @@ source bootstrap.sh
 bash ivans-defaults.sh
 ```
 
+#### Copy these
+* /Library/Sounds
+* ~/Library/Fonts
+
+# Install these
 * puma-dev: https://github.com/puma/puma-dev
 * iTunes Track Parser: https://dougscripts.com/287
 * Webster's dictionary: http://jsomers.net/blog/dictionary
-* Inconsolata: https://github.com/google/fonts/tree/master/ofl/inconsolata
 * Transfer Divvy shortcuts from previous Mac: http://mizage.com/help/divvy/export_import.html
+* Latest Inconsolata: https://github.com/google/fonts/tree/master/ofl/inconsolata
