@@ -57,17 +57,20 @@ alias rspec='rspec -c' # Color
 # rbenv: To enable shims and autocompletion
 eval "$(rbenv init -)"
 
-# bins in my home
+# Append bins in my home
 export PATH="$PATH:~/.bin"
 
-# Postgres.app
+# Append Postgres.app
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 export PGDATA="/Users/admin/Library/Application Support/Postgres/var-9.6"
 
-# npm global
+# Prepend bins in homebrew
+export PATH="/usr/local/sbin:$PATH"
+
+# Prepend npm global
 export PATH="$(npm config get prefix):$PATH"
 
-# bins in the pwd
+# Prepend bins in the pwd
 export PATH=".:$PATH"
 
 # Java
