@@ -112,7 +112,7 @@ module.exports = {
 
     // for advanced config flags please refer to https://hyper.is/#cfg
 
-    hypercwd: {
+    "hyper-samewd": {
       initialWorkingDirectory: "~/Work"
     },
 
@@ -141,15 +141,14 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hypercwd",
-    "hyperterm-tabs",
+    "hyper-samewd",
     "hyper-focused",
     "hyperterm-close-on-left",
     "hyper-tab-icons",
     "hyperminimal",
     "hyperterm-alternatescroll",
     "hyper-stylesheet",
-    "hyperterm-final-say"
+    "hyper-final-say"
   ],
 
   // in development, you can create a directory under
