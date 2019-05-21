@@ -6,7 +6,7 @@
     width: 2000
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
-    confirmCompletion: "tab"
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
   "bracket-matcher":
     autocompleteBrackets: false
     wrapSelectionsInBrackets: false
