@@ -19,7 +19,7 @@ alias cdd='cd ~/.dotfiles'
 alias cdw='cd ~/Work'
 alias cds='cd ~/Sites'
 alias cdl='cd ~/Work/lbs'
-alias cdh='cd ~/Work/hest'
+alias cdh='cd ~/Work/hest/prototypes/004'
 alias cdf='cd ~/Sites/frails'
 alias cdi='cd ~/Sites/ivanish'
 
