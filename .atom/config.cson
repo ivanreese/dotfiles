@@ -54,6 +54,7 @@
       "welcome"
       "wrap-guide"
       "keybinding-resolver"
+      "github"
     ]
     ignoredNames: [
       ".git"
