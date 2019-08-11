@@ -15,13 +15,15 @@ alias ls='exa --all --long --color-scale --git'
 alias ping='prettyping --nolegend'
 
 # Quick links
+alias cdc='cd ~/Work/visual-programming-codex'
 alias cdd='cd ~/.dotfiles'
-alias cdw='cd ~/Work'
-alias cds='cd ~/Sites'
-alias cdl='cd ~/Work/lbs'
-alias cdh='cd ~/Work/hest/prototypes/004'
 alias cdf='cd ~/Sites/frails'
+alias cdh='cd ~/Work/hest/prototypes/005'
 alias cdi='cd ~/Sites/ivanish'
+alias cdl='cd ~/Work/lbs'
+alias cds='cd ~/Sites'
+alias cdv='cd ~/Work/visual-programming-codex'
+alias cdw='cd ~/Work'
 
 # rlwrap figwheel, please
 alias fig='lein clean && rlwrap lein figwheel'
