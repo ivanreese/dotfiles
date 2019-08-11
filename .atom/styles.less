@@ -13,10 +13,10 @@ span.syntax--trailing-whitespace {
       background: none;
       border: none!important;
       box-shadow: none!important;
-      opacity: .8;
+      opacity: .05;
       font-weight: lighter;
 
-      &:not(.active) { opacity: .5; }
+      &:not(.active) { opacity: 0; }
 
       &.active::before {
         display: none;
@@ -31,7 +31,7 @@ span.syntax--trailing-whitespace {
   }
 
   atom-text-editor {
-    padding-left: 16em;
+    padding-left: 3em;
     @media(min-width: 2000px) { padding-left: 35em; }
     .scroll-view { padding-top: 4px; }
     .line.cursor-line,

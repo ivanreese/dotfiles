@@ -14,7 +14,6 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
-    closeEmptyWindows: false
     colorProfile: "srgb"
     disabledPackages: [
       "about"
@@ -55,6 +54,11 @@
       "wrap-guide"
       "keybinding-resolver"
       "github"
+      "language-actionscript3"
+      "git-diff"
+      "go-to-line"
+      "language-less"
+      "symbols-view"
     ]
     ignoredNames: [
       ".git"
@@ -85,7 +89,7 @@
     ]
     projectHome: "/Users/admin/Work"
     restorePreviousWindowsOnStart: "always"
-    telemetryConsent: "no"
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "dracula-syntax"
@@ -97,6 +101,7 @@
     fontSize: 22
     preferredLineLength: 200
     scrollPastEnd: true
+    showLineNumbers: false
     tabType: "soft"
     undoGroupingInterval: 1
   "exception-reporting":
@@ -175,6 +180,7 @@
       "text.html.basic"
       "text.html.erb"
       "source.gfm"
+      "source.litcoffee"
     ]
   "status-bar":
     cursorPositionFormat: "%L,%C"
@@ -183,6 +189,7 @@
     displayMruTabList: false
     enableMruTabSwitching: false
   "tree-view":
+    autoReveal: true
     focusOnReveal: false
     hideIgnoredNames: true
   whitespace: {}
