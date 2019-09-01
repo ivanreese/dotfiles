@@ -101,7 +101,6 @@
     fontSize: 22
     preferredLineLength: 200
     scrollPastEnd: true
-    showLineNumbers: false
     tabType: "soft"
     undoGroupingInterval: 1
   "exception-reporting":
