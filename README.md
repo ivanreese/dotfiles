@@ -13,12 +13,18 @@ cp ~/.hyper.js ~/.dotfiles/.hyper.js
 
 ### New Machine Setup
 
-Start with Homebrew: https://brew.sh
-
 ```bash
+# First, change the default shell from system zsh to system bash
+chsh -s /bin/bash
+
+# Then, install homebrew
+open -a safari https://brew.sh
+
 # Install brewskies
-brew cask install java # For clojure
-brew install awscli bat cloc clojure diff-so-fancy exa fd ffmpeg git guetzli heroku/brew/heroku hub leiningen node planck prettyping rbenv yarn
+brew install awscli bat bash cloc diff-so-fancy exa fd ffmpeg git guetzli hub node prettyping rbenv yarn
+
+# Change the default shell from system bash to brew bash
+chsh -s /usr/local/bin/bash
 
 # Set up an SSH key
 ssh-keygen -t rsa
@@ -29,7 +35,7 @@ open -a safari https://github.com/settings/ssh
 npm ls -g --depth=0
 
 # Then, install whichever ones I want, such as:
-npm install -g cdig/cli cljs coffeescript electron-forge gulp-cli shadow-cljs surge svgi tldr
+npm install -g cdig/cli coffeescript electron-forge gulp-cli shadow-cljs surge tldr
 
 # Set up ruby
 rbenv install -l # Figure out which version of ruby is the current
