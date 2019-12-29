@@ -45,6 +45,7 @@ rbenv global "$ruby_version"
 rbenv shell "$ruby_version"
 gem update --system
 gem install bundler
+gem install rails
 rbenv rehash
 
 # Now set up the dotfiles
@@ -62,10 +63,10 @@ bash ivans-defaults.sh
 #### Copy these
 * /Library/Sounds
 * ~/Library/Fonts
+* ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
 
 # Install these
 * puma-dev: https://github.com/puma/puma-dev
 * iTunes Track Parser: https://dougscripts.com/287
-* Webster's dictionary: http://jsomers.net/blog/dictionary
 * Transfer Divvy shortcuts from previous Mac: http://mizage.com/help/divvy/export_import.html
 * Latest Inconsolata: https://github.com/google/fonts/tree/master/ofl/inconsolata
