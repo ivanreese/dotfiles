@@ -335,12 +335,12 @@ fancy_echo "Spotlight: Rebuild the index from scratch"
 sudo mdutil -E / > /dev/null
 
 ###############################################################################
-# iTunes & Photos                                                             #
+# Music & Photos                                                             #
 ###############################################################################
 echo
 
-fancy_echo "iTunes: Use half-star ratings"
-defaults write com.apple.iTunes allow-half-stars -bool true
+fancy_echo "Music: Use half-star ratings"
+defaults write com.apple.Music allow-half-stars -bool true
 
 echo
 
