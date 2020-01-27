@@ -146,7 +146,6 @@ module.exports = {
     "hyperterm-close-on-left",
     "hyper-tab-icons",
     "hyperminimal",
-    "hyperterm-alternatescroll",
     "hyper-stylesheet",
     "hyper-final-say"
   ],
