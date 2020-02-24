@@ -22,6 +22,7 @@ open -a safari https://brew.sh
 
 # Install brewskies
 brew install awscli bat bash cloc diff-so-fancy exa fd ffmpeg git guetzli hub node prettyping rbenv yarn
+brew cask install qlstephen
 
 # Change the default shell from system bash to brew bash
 chsh -s /usr/local/bin/bash
@@ -35,7 +36,7 @@ open -a safari https://github.com/settings/ssh
 npm ls -g --depth=0
 
 # Then, install whichever ones I want, such as:
-npm install -g cdig/cli coffeescript electron-forge gulp-cli shadow-cljs surge tldr
+npm install -g cdig/cli coffeescript electron-forge gulp-cli surge tldr
 
 # Set up ruby
 rbenv install -l # Figure out which version of ruby is the current
@@ -66,7 +67,6 @@ bash ivans-defaults.sh
 * ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
 
 # Install these
-* puma-dev: https://github.com/puma/puma-dev
-* iTunes Track Parser: https://dougscripts.com/287
 * Transfer Divvy shortcuts from previous Mac: http://mizage.com/help/divvy/export_import.html
 * Latest Inconsolata: https://github.com/google/fonts/tree/master/ofl/inconsolata
+* iTunes Track Parser: https://dougscripts.com/287
