@@ -41,6 +41,9 @@ esac
 ###############################################################################
 echo
 
+fancy_echo "UI/UX: Enable the starup chime"
+sudo nvram StartupMute=%00
+
 fancy_echo "UI/UX: Setting up menu bar items"
 defaults write com.apple.systemuiserver menuExtras -array \
   "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
