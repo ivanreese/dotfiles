@@ -40,7 +40,7 @@ npm install -g cdig/cli coffeescript electron-forge gulp-cli surge tldr
 
 # Set up ruby
 rbenv install -l # Figure out which version of ruby is the current
-ruby_version="2.6.0" # Update accordingly
+ruby_version="2.7.0" # Update accordingly
 rbenv install "$ruby_version"
 rbenv global "$ruby_version"
 rbenv shell "$ruby_version"

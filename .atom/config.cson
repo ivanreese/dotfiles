@@ -42,7 +42,6 @@
       "language-python"
       "language-toml"
       "link"
-      "markdown-preview"
       "metrics"
       "open-on-github"
       "package-generator"
@@ -59,6 +58,7 @@
       "go-to-line"
       "language-less"
       "symbols-view"
+      "markdown-preview"
     ]
     ignoredNames: [
       ".git"
@@ -188,7 +188,6 @@
     displayMruTabList: false
     enableMruTabSwitching: false
   "tree-view":
-    autoReveal: true
     focusOnReveal: false
     hideIgnoredNames: true
   whitespace: {}
