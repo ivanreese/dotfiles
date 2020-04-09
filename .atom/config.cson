@@ -99,6 +99,7 @@
   editor:
     fontFamily: "inconsolata"
     fontSize: 22
+    maxScreenLineLength: 5000
     preferredLineLength: 200
     scrollPastEnd: true
     tabType: "soft"
