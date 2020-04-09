@@ -17,7 +17,7 @@ alias ping='prettyping --nolegend'
 # Quick links
 alias cdc='cd ~/Work/visual-programming-codex'
 alias cdd='cd ~/.dotfiles'
-alias cdf='cd ~/Sites/frails'
+alias cdf='cd ~/Work/futureofcoding.org'
 alias cdh='cd ~/Work/hest/prototypes/006-minimal'
 alias cdi='cd ~/Sites/ivanish'
 alias cdl='cd ~/Work/lbs'
