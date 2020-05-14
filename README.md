@@ -67,6 +67,7 @@ bash ivans-defaults.sh
 * ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
 
 # Install these
-* Transfer Divvy shortcuts from previous Mac: http://mizage.com/help/divvy/export_import.html
+* Transfer Divvy shortcuts from previous Mac: `divvy://export`
 * Latest Inconsolata: https://github.com/google/fonts/tree/master/ofl/inconsolata
 * iTunes Track Parser: https://dougscripts.com/287
+* My Dracula fork: `apm install ivanreese/old-atom-dracula`

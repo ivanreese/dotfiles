@@ -2,43 +2,6 @@ span.syntax--trailing-whitespace {
   background-color: transparent;
 }
 
-[data-zen="true"] {
-  .tab-bar {
-    border: none!important;
-    box-shadow: 0 0 8px 4px #282A36;
-    z-index: 10000;
-    background: #282A36;
-
-    .tab {
-      background: none;
-      border: none!important;
-      box-shadow: none!important;
-      opacity: .05;
-      font-weight: lighter;
-
-      &:not(.active) { opacity: 0; }
-
-      &.active::before {
-        display: none;
-      }
-    }
-  }
-
-  .ink-toolbar > .bar {
-    background: none!important;
-    border: none!important;
-    padding-top: 4px;
-  }
-
-  atom-text-editor {
-    padding-left: 3em;
-    @media(min-width: 2000px) { padding-left: 35em; }
-    .scroll-view { padding-top: 4px; }
-    .line.cursor-line,
-    .line-number.cursor-line-no-selection { background: transparent; }
-  }
-}
-
 atom-text-editor.is-focused {
   .cursor {
     opacity: .15!important;

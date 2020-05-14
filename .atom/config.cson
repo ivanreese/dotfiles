@@ -53,7 +53,6 @@
       "wrap-guide"
       "keybinding-resolver"
       "github"
-      "language-actionscript3"
       "git-diff"
       "go-to-line"
       "language-less"
@@ -92,14 +91,13 @@
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "dracula-syntax"
+      "old-atom-dracula"
     ]
     titleBar: "hidden"
     useTreeSitterParsers: false
   editor:
     fontFamily: "inconsolata"
     fontSize: 22
-    maxScreenLineLength: 5000
     preferredLineLength: 200
     scrollPastEnd: true
     tabType: "soft"
@@ -108,6 +106,7 @@
     userId: "908f6f61-c318-4131-b12d-2753d893f074"
   "find-and-replace":
     scrollToResultOnLiveSearch: true
+    useRipgrep: true
   "fuzzy-finder":
     ignoredNames: [
       "node_modules"
@@ -182,6 +181,7 @@
       "source.gfm"
       "source.litcoffee"
     ]
+    useLocales: false
   "status-bar":
     cursorPositionFormat: "%L,%C"
     selectionCountFormat: "%C characters in %L lines"
