@@ -28,7 +28,6 @@
       "dev-live-reload"
       "exception-reporting"
       "image-view"
-      "language-c"
       "language-csharp"
       "language-git"
       "language-go"
@@ -59,6 +58,8 @@
       "symbols-view"
       "markdown-preview"
     ]
+    editor:
+      multiCursorOnClick: true
     ignoredNames: [
       ".git"
       ".hg"
@@ -88,7 +89,7 @@
     ]
     projectHome: "/Users/admin/Work"
     restorePreviousWindowsOnStart: "always"
-    telemetryConsent: "limited"
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "old-atom-dracula"
