@@ -21,7 +21,7 @@ chsh -s /bin/bash
 open -a safari https://brew.sh
 
 # Install brewskies
-brew install awscli bat bash cloc diff-so-fancy exa fd ffmpeg git guetzli hub node prettyping rbenv yarn
+brew install awscli bat bash cloc diff-so-fancy exa fd ffmpeg git guetzli hub mas node prettyping rbenv yarn
 brew cask install qlstephen
 
 # Change the default shell from system bash to brew bash
@@ -37,6 +37,13 @@ npm ls -g --depth=0
 
 # Then, install whichever ones I want, such as:
 npm install -g cdig/cli coffeescript electron-forge gulp-cli surge tldr
+
+# On my previous Mac, run this to see all the App Store apps I have installed:
+mas list
+
+# Then install whichever ones I want, such as:
+# Pixelmator, Numbers, Divvy, Space Gremlin, Final Cut Pro, Icon Slate, Keka, iA Writer, Quiver, xScope, ColorSnapper2, HyperDither, Pixelmator Pro, Wipr, Gifski, Tweetbot, Drafts
+mas install 407963104 409203825 413857545 414515628 424389933 439697913 470158793 775737590 866773894 889428659 969418666 1110997147 1289583905 1320666476 1351639930 1384080005 1435957248
 
 # Set up ruby
 rbenv install -l # Figure out which version of ruby is the current
