@@ -63,13 +63,12 @@
     ignoredNames: [
       ".git"
       ".hg"
-      ".svg"
+      ".svn"
       ".DS_Store"
       "._*"
       "Thumbs.db"
       "desktop.ini"
       ".sass-cache"
-      ".codekit-cache"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -95,10 +94,9 @@
       "old-atom-dracula"
     ]
     titleBar: "hidden"
-    useTreeSitterParsers: false
   editor:
     fontFamily: "inconsolata"
-    fontSize: 22
+    fontSize: 20
     preferredLineLength: 200
     scrollPastEnd: true
     tabType: "soft"

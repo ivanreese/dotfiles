@@ -78,3 +78,4 @@ bash ivans-defaults.sh
 * Latest Inconsolata: https://github.com/google/fonts/tree/master/ofl/inconsolata
 * iTunes Track Parser: https://dougscripts.com/287
 * My Dracula fork: `apm install ivanreese/old-atom-dracula`
+* All existing SetApp apps: https://support.setapp.com/hc/en-us/articles/360008560299-How-do-I-quickly-install-my-Setapp-apps-on-another-Mac-
