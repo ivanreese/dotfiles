@@ -32,7 +32,6 @@
       "language-git"
       "language-go"
       "language-java"
-      "language-make"
       "language-mustache"
       "language-objective-c"
       "language-perl"
@@ -201,3 +200,6 @@
     nonWordCharacters: "()\"':,;~@#$%^&{}[]`"
     softWrap: false
     tabLength: 1
+".makefile.source":
+  "tabs-to-spaces":
+    onSave: "tabify"
