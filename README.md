@@ -22,7 +22,7 @@ open -a safari https://brew.sh
 
 # Install brewskies
 brew install awscli bat bash cloc diff-so-fancy exa fd ffmpeg git guetzli hub mas node prettyping rbenv yarn
-brew cask install qlstephen
+brew install --cask qlstephen
 
 # Change the default shell from system bash to brew bash
 echo "/usr/local/bin/bash" >> /etc/shells
