@@ -14,7 +14,7 @@ cp ~/.hyper.js ~/.dotfiles/.hyper.js
 ### New Machine Setup
 
 ```bash
-# First, change the default shell from system zsh to system bash
+# First, change the shell from system zsh to system bash
 chsh -s /bin/bash
 
 # Then, install homebrew
@@ -25,6 +25,7 @@ brew install awscli bat bash cloc diff-so-fancy exa fd ffmpeg git guetzli hub ma
 brew cask install qlstephen
 
 # Change the default shell from system bash to brew bash
+echo "/usr/local/bin/bash" >> /etc/shells
 chsh -s /usr/local/bin/bash
 
 # Set up an SSH key
