@@ -64,7 +64,7 @@ export PATH="$PATH:~/.bin"
 
 # Append Postgres.app
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
-export PGDATA="/Users/admin/Library/Application Support/Postgres/var-9.6"
+export PGDATA="/Users/admin/Library/Application Support/Postgres/var-13"
 
 # Prepend bins in homebrew
 export PATH="/usr/local/sbin:$PATH"

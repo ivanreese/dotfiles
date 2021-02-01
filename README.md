@@ -81,8 +81,8 @@ bash ivans-defaults.sh
 * ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
 
 # Install these
+* My Dracula fork: `apm install ivanreese/old-atom-dracula`
 * Transfer Divvy shortcuts from previous Mac: `divvy://export`
 * Latest Inconsolata: https://fonts.google.com/specimen/Inconsolata
-* iTunes Track Parser: https://dougscripts.com/287
-* My Dracula fork: `apm install ivanreese/old-atom-dracula`
-* All existing SetApp apps: https://support.setapp.com/hc/en-us/articles/360008560299-How-do-I-quickly-install-my-Setapp-apps-on-another-Mac-
+* Postgres app, and then update `PGDATA` in `.bash_profile` to the right version.
+* All existing SetApp apps
