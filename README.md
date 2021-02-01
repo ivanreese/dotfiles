@@ -22,6 +22,7 @@ open -a safari https://brew.sh
 
 # Install brewskies
 brew install awscli bat bash cloc diff-so-fancy exa fd ffmpeg git guetzli hub mas node prettyping rbenv yarn
+brew tap heroku/brew && brew install heroku
 brew install --cask qlstephen
 
 # Change the default shell from system bash to brew bash
@@ -48,7 +49,7 @@ mas install 407963104 409203825 413857545 414515628 424389933 439697913 47015879
 
 # Set up ruby
 rbenv install -l # Figure out which version of ruby is the current
-ruby_version="2.7.1" # Update accordingly
+ruby_version="3.0.0" # Update accordingly
 rbenv install "$ruby_version"
 rbenv global "$ruby_version"
 rbenv shell "$ruby_version"
@@ -76,7 +77,7 @@ bash ivans-defaults.sh
 
 # Install these
 * Transfer Divvy shortcuts from previous Mac: `divvy://export`
-* Latest Inconsolata: https://github.com/google/fonts/tree/master/ofl/inconsolata
+* Latest Inconsolata: https://fonts.google.com/specimen/Inconsolata
 * iTunes Track Parser: https://dougscripts.com/287
 * My Dracula fork: `apm install ivanreese/old-atom-dracula`
 * All existing SetApp apps: https://support.setapp.com/hc/en-us/articles/360008560299-How-do-I-quickly-install-my-Setapp-apps-on-another-Mac-
