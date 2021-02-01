@@ -23,7 +23,12 @@ open -a safari https://brew.sh
 # Install brewskies
 brew install awscli bat bash cloc diff-so-fancy exa fd ffmpeg git guetzli hub mas node prettyping rbenv yarn
 brew tap heroku/brew && brew install heroku
+
+# Install qlstephen
 brew install --cask qlstephen
+xattr -cr ~/Library/QuickLook/QLStephen.qlgenerator
+qlmanage -r
+qlmanage -r cache
 
 # Change the default shell from system bash to brew bash
 echo "/usr/local/bin/bash" >> /etc/shells
