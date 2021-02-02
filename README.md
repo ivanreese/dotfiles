@@ -43,7 +43,7 @@ open -a safari https://github.com/settings/ssh
 npm ls -g --depth=0
 
 # Then, install whichever ones I want, such as:
-npm install -g cdig/cli coffeescript electron-forge gulp-cli surge tldr
+npm install -g cdig/cli coffeescript gulp-cli surge tldr
 
 # On my previous Mac, run this to see all the App Store apps I have installed:
 mas list
