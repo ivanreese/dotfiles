@@ -43,7 +43,7 @@ open -a safari https://github.com/settings/ssh
 npm ls -g --depth=0
 
 # Then, install whichever ones I want, such as:
-npm install -g cdig/cli coffeescript gulp-cli surge tldr
+npm install -g cdig/cli coffeescript gulp-cli surge
 
 # On my previous Mac, run this to see all the App Store apps I have installed:
 mas list
@@ -71,18 +71,17 @@ hub clone git@github.com:ivanreese/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 source bootstrap.sh
 
-# Finally, interactively set up my defaults
+# If desired, interactively set up my defaults
 bash ivans-defaults.sh
 ```
 
 #### Copy these
-* /Library/Sounds
+* ~/Library/Sounds
 * ~/Library/Fonts
 * ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
 
 # Install these
 * My Dracula fork: `apm install ivanreese/old-atom-dracula`
 * Transfer Divvy shortcuts from previous Mac: `divvy://export`
-* Latest Inconsolata: https://fonts.google.com/specimen/Inconsolata
 * Postgres app, and then update `PGDATA` in `.bash_profile` to the right version.
 * All existing SetApp apps
