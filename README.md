@@ -20,8 +20,12 @@ chsh -s /bin/bash
 # Then, install homebrew
 open -a safari https://brew.sh
 
-# Install brewskies
-brew install awscli bat bash cloc diff-so-fancy exa fd ffmpeg git guetzli hub mas node prettyping rbenv yarn
+# On my previous Mac, run this to see all the brewskies I have installed
+brew leaves
+
+# Then, install whichever ones I want, such as:
+brew install awscli bash bat cloc diff-so-fancy exa fd ffmpeg git hub mas node prettyping rbenv sass/sass/sass yarn
+brew install guetzli imagemagick libdvdcss # Maybe these too?
 brew tap heroku/brew && brew install heroku
 
 # Install qlstephen
