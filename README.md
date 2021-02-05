@@ -53,7 +53,8 @@ npm install -g cdig/cli coffeescript gulp-cli surge
 apm list
 
 # Then, install whichever ones I want, such as:
-apm install auto-update-packages file-icons highlight-selected ivanreese/old-atom-dracula parinfer pretty-json show-invisibles-plus sorter tabs-to-spaces
+apm i auto-update-packages && apm i file-icons && apm i highlight-selected && apm i ivanreese/old-atom-dracula && apm i parinfer && apm i pretty-json && apm i show-invisibles-plus && apm i sorter && apm i tabs-to-spaces
+# (For some dumb reason, we can just list all the packages like we do for brew and npm. apm says they're installed, but they don't appear in ~/.atom/packages)
 
 # On my previous Mac, run this to see all the App Store apps I have installed:
 mas list
