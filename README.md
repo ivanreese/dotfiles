@@ -69,8 +69,7 @@ rbenv rehash
 
 # Now set up the dotfiles
 # If hub asks for credentials, username is `ivanreese`
-# After it asks for creds, it'll make an OAuth token, stored in ~/.config/hub
-# I should use that token instead of a password if git asks me for a password when working with an https remote
+# For password, use a token: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 hub clone git@github.com:ivanreese/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 source bootstrap.sh
