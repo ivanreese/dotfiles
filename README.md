@@ -49,6 +49,12 @@ npm ls -g --depth=0
 # Then, install whichever ones I want, such as:
 npm install -g cdig/cli coffeescript gulp-cli surge
 
+# On my previous Mac, run this to see all the atom community packages I have installed
+apm list
+
+# Then, install whichever ones I want, such as:
+apm install auto-update-packages file-icons highlight-selected ivanreese/old-atom-dracula parinfer pretty-json show-invisibles-plus sorter tabs-to-spaces
+
 # On my previous Mac, run this to see all the App Store apps I have installed:
 mas list
 
@@ -84,7 +90,6 @@ bash ivans-defaults.sh
 * ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
 
 # Install these
-* My Dracula fork: `apm install ivanreese/old-atom-dracula`
 * Transfer Divvy shortcuts from previous Mac: `divvy://export`
 * Postgres app, and then update `PGDATA` in `.bash_profile` to the right version.
 * All existing SetApp apps
