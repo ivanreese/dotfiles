@@ -9,6 +9,7 @@ cp ~/.atom/keymap.cson ~/.dotfiles/.atom/keymap.cson
 cp ~/.atom/styles.less ~/.dotfiles/.atom/styles.less
 cp ~/.hyper.css ~/.dotfiles/.hyper.css
 cp ~/.hyper.js ~/.dotfiles/.hyper.js
+cp ~/.gitconfig ~/.dotfiles/.gitconfig
 ```
 
 ### New Machine Setup
@@ -57,7 +58,7 @@ apm list
 
 # Then, install whichever ones I want, such as:
 apm i auto-update-packages && apm i file-icons && apm i highlight-selected && apm i ivanreese/old-atom-dracula && apm i parinfer && apm i pretty-json && apm i show-invisibles-plus && apm i sorter && apm i tabs-to-spaces
-# (For some dumb reason, we can just list all the packages like we do for brew and npm. apm says they're installed, but they don't appear in ~/.atom/packages)
+# (For some dumb reason, we can't just list all the packages like we do for brew and npm. apm says they're installed, but they don't appear in ~/.atom/packages)
 
 # On my previous Mac, run this to see all the App Store apps I have installed:
 mas list
@@ -79,7 +80,9 @@ rbenv rehash
 
 # Now set up the dotfiles
 # If hub asks for credentials, username is `ivanreese`
-# For password, use a token: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+# For password, you have to use a token: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+# The token issue is explained here: https://github.com/github/hub/issues/2655
+# Note that hub is no longer officially supported, so it might break in the future
 hub clone git@github.com:ivanreese/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 source bootstrap.sh
