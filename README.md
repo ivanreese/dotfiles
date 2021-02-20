@@ -9,7 +9,6 @@ cp ~/.atom/keymap.cson ~/.dotfiles/.atom/keymap.cson
 cp ~/.atom/styles.less ~/.dotfiles/.atom/styles.less
 cp ~/.hyper.css ~/.dotfiles/.hyper.css
 cp ~/.hyper.js ~/.dotfiles/.hyper.js
-cp ~/.gitconfig ~/.dotfiles/.gitconfig
 ```
 
 ### New Machine Setup

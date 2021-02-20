@@ -19,6 +19,7 @@ alias cdc='cd ~/Work/visual-programming-codex'
 alias cdd='cd ~/.dotfiles'
 alias cdf='cd ~/Work/futureofcoding.org'
 alias cdh='cd ~/Work/hest/prototypes/008-shaders'
+alias cdy='cd ~/Work/hyperzine'
 alias cdi='cd ~/Sites/ivanish'
 alias cdl='cd ~/Work/lbs'
 alias cds='cd ~/Sites'
@@ -59,6 +60,9 @@ alias rspec='rspec -c' # Color
 # rbenv: To enable shims and autocompletion
 eval "$(rbenv init -)"
 
+# Rust stuff
+source "$HOME/.cargo/env"
+
 # Append bins in my home
 export PATH="$PATH:~/.bin"
 
@@ -66,7 +70,10 @@ export PATH="$PATH:~/.bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 export PGDATA="/Users/admin/Library/Application Support/Postgres/var-13"
 
-# Prepend bins in homebrew
+# We need to prepend bins in homebrew (even though they're already on the PATH by default) so that brew comes before ruby (so we can use dart sass via brew instead of ruby sass)
+export PATH="/usr/local/bin:$PATH"
+
+# Prepend sbins in homebrew
 export PATH="/usr/local/sbin:$PATH"
 
 # Prepend npm global
