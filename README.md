@@ -63,8 +63,8 @@ apm i auto-update-packages && apm i file-icons && apm i highlight-selected && ap
 mas list
 
 # Then install whichever ones I want, such as:
-# Pixelmator, Numbers, Divvy, Space Gremlin, Final Cut Pro, Icon Slate, Keka, iA Writer, Quiver, xScope, ColorSnapper2, HyperDither, Pixelmator Pro, Wipr, Gifski, Tweetbot, Drafts
-mas install 407963104 409203825 413857545 414515628 424389933 439697913 470158793 775737590 866773894 889428659 969418666 1110997147 1289583905 1320666476 1351639930 1384080005 1435957248
+#           Pixelmator, Numbers,  Divvy,    Space Gremlin, Final Cut Pro, Icon Slate, Keka,     iA Writer, Quiver,   xScope,   ColorSnapper2, HyperDither, Pixelmator Pro, Wipr,      Gifski,    Tweetbot,  Drafts
+mas install 407963104   409203825 413857545 414515628      424389933      439697913   470158793 775737590  866773894 889428659 969418666      1110997147   1289583905      1320666476 1351639930 1384080005 1435957248
 
 # Set up ruby
 rbenv install -l # Figure out which version of ruby is the current
