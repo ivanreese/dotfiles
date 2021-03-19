@@ -34,12 +34,13 @@ xattr -cr ~/Library/QuickLook/QLStephen.qlgenerator
 qlmanage -r
 qlmanage -r cache
 
-# Change the default shell from system bash to brew bash
-echo "/usr/local/bin/bash" >> /etc/shells
-chsh -s /usr/local/bin/bash
-# Note that after each macOS update, this is going to create some Relocated Items.
-# I can check them like so to see if Apple changes /etc/shells in a way I care about:
-diff /Users/Shared/Relocated\ Items/Configuration/private/etc/shells.system_default /etc/shells
+#X# Change the default shell from system bash to brew bash
+#X# echo "/usr/local/bin/bash" >> /etc/shells
+#X# chsh -s /usr/local/bin/bash
+#X# # Note that after each macOS update, this is going to create some Relocated Items.
+#X# # I can check them like so to see if Apple changes /etc/shells in a way I care about:
+#X# diff /Users/Shared/Relocated\ Items/Configuration/private/etc/shells.system_default /etc/shells
+# An alternative to the above, just go to System Prefs > Users & Groups and change the default shell to /usr/local/bin/bash
 
 # Set up an SSH key
 ssh-keygen -t rsa
@@ -94,6 +95,7 @@ bash ivans-defaults.sh
 * ~/Library/Sounds
 * ~/Library/Fonts
 * ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
+* Final Cut custom effect presets (audio & video) and workspaces
 
 # Install these
 * Transfer Divvy shortcuts from previous Mac: `divvy://export`

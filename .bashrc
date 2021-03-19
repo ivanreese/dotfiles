@@ -26,6 +26,16 @@ alias cds='cd ~/Sites'
 alias cdv='cd ~/Work/visual-programming-codex'
 alias cdw='cd ~/Work'
 
+# Quick Tools
+alias a="atom ."
+alias n="nova ."
+alias r="rails"
+alias rc="rails c"
+alias rspec='rspec -c' # Color
+alias y="yarn"
+alias ys="yarn start"
+alias ye="yarn electron"
+
 # rlwrap figwheel, please
 alias fig='lein clean && rlwrap lein figwheel'
 
@@ -46,13 +56,6 @@ alias gr='git r'
 alias gitr='git r'
 alias gra='git ra'
 alias gitra='git ra'
-
-# Keep rails handy
-alias r="rails"
-alias rc="rails c"
-
-# We sure like our specs
-alias rspec='rspec -c' # Color
 
 
 # PATHS & VARS
