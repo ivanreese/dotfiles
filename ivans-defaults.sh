@@ -41,49 +41,25 @@ esac
 ###############################################################################
 echo
 
-fancy_echo "UI/UX: Enable the starup chime"
-sudo nvram StartupMute=%00
-
 fancy_echo "UI/UX: Setting up menu bar items"
 defaults write com.apple.systemuiserver menuExtras -array \
   "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
   "/System/Library/CoreServices/Menu Extras/Volume.menu" \
-  "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
   "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-  "/System/Library/CoreServices/Menu Extras/User.menu" \
   "/System/Library/CoreServices/Menu Extras/Clock.menu"
-
-fancy_echo "UI/UX: Setting highlight color to Graphite"
-defaults write NSGlobalDomain AppleHighlightColor -string "0.847059 0.847059 0.862745"
 
 fancy_echo "UI/UX: Setting sidebar icon size to large"
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 3
 
-fancy_echo "UI/UX: Increasing window resize speed for Cocoa applications"
-defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
-
 fancy_echo "UI/UX: Expanding save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
-
-fancy_echo "UI/UX: Expanding print panel by default"
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
-
-fancy_echo "UI/UX: Saving to disk (not to iCloud) by default"
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-
-fancy_echo "UI/UX: Automatically quit printer app once the print jobs complete"
-defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
 fancy_echo "UI/UX: Enabling Resume system-wide"
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool true
 
 fancy_echo "UI/UX: Disabling automatic termination of inactive apps"
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
-
-fancy_echo "UI/UX: Restart automatically if the computer freezes"
-sudo systemsetup -setrestartfreeze on
 
 fancy_echo "UI/UX: Enabling ctrl-scroll to zoom"
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
@@ -107,12 +83,8 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 echo
-fancy_echo "Bluetooth: Increasing sound quality for Bluetooth headphones/headsets"
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
-
-echo
 fancy_echo "Keyboard: Enabling full keyboard access"
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
 
 fancy_echo "Keyboard: Disabling press-and-hold for keys in favor of key repeat"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
@@ -297,45 +269,6 @@ defaults write com.apple.Safari AutoFillCreditCardData -bool false
 fancy_echo "Safari: Do Not Track"
 defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 
-###############################################################################
-# Spotlight                                                                   #
-###############################################################################
-
-echo
-fancy_echo "Spotlight: Disable indexing for any volume that gets mounted and has not yet been indexed before"
-sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
-
-fancy_echo "Spotlight: Change indexing order and disable some search results"
-defaults write com.apple.spotlight orderedItems -array \
-	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
-	'{"enabled" = 0;"name" = "SYSTEM_PREFS";}' \
-	'{"enabled" = 0;"name" = "DIRECTORIES";}' \
-	'{"enabled" = 0;"name" = "PDF";}' \
-	'{"enabled" = 0;"name" = "FONTS";}' \
-	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
-	'{"enabled" = 0;"name" = "MESSAGES";}' \
-	'{"enabled" = 0;"name" = "CONTACT";}' \
-	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
-	'{"enabled" = 0;"name" = "IMAGES";}' \
-	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
-	'{"enabled" = 0;"name" = "MUSIC";}' \
-	'{"enabled" = 0;"name" = "MOVIES";}' \
-	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-	'{"enabled" = 0;"name" = "SOURCE";}' \
-	'{"enabled" = 0;"name" = "MENU_DEFINITION";}' \
-	'{"enabled" = 0;"name" = "MENU_OTHER";}' \
-	'{"enabled" = 0;"name" = "MENU_CONVERSION";}' \
-	'{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
-	'{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
-	'{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
-
-fancy_echo "Spotlight: Load new settings before rebuilding the index"
-sudo killall mds > /dev/null 2>&1
-fancy_echo "Spotlight: Make sure indexing is enabled for the main volume"
-sudo mdutil -i on / > /dev/null
-fancy_echo "Spotlight: Rebuild the index from scratch"
-sudo mdutil -E / > /dev/null
 
 ###############################################################################
 # Music & Photos                                                             #

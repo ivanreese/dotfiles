@@ -89,6 +89,10 @@ source bootstrap.sh
 
 # If desired, interactively set up my defaults
 bash ivans-defaults.sh
+
+# Disable spotlight
+sudo mdutil -a -i off
+# Also do LaunchBar > Index > Show Index > Applications > Options > Use Spotlight index: off
 ```
 
 #### Copy these
