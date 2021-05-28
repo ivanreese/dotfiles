@@ -69,7 +69,7 @@ mas install 407963104   409203825 413857545 414515628      424389933      439697
 
 # Set up ruby
 rbenv install -l # Figure out which version of ruby is the current
-ruby_version="3.0.0" # Update accordingly
+ruby_version="3.0.1" # Update accordingly
 rbenv install "$ruby_version"
 rbenv global "$ruby_version"
 rbenv shell "$ruby_version"

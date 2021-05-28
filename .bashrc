@@ -143,6 +143,10 @@ xterm*|rxvt*)
 esac
 
 
+# Use a custom dist for Electron dev
+export ELECTRON_OVERRIDE_DIST_PATH=~/Work/electron/arm64
+
+
 # FIN
 
 # Clear the login message
