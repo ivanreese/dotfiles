@@ -4,6 +4,10 @@
     softWrap: true
     tabs: "multiple"
     width: 2000
+  "auto-dark-mode":
+    darkProfile: "one-dark-ui old-atom-dracula"
+    lightProfile: "one-light-ui solarized-light-syntax"
+    notifyOnChange: false
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
@@ -95,7 +99,7 @@
     titleBar: "hidden"
   editor:
     fontFamily: "inconsolata"
-    fontSize: 20
+    fontSize: 21
     preferredLineLength: 200
     scrollPastEnd: true
     tabType: "soft"
@@ -137,6 +141,8 @@
     strict: false
   "one-dark-ui":
     hideDockButtons: true
+  "one-light-ui":
+    hideDockButtons: true
   parinfer:
     "file-extensions": [
       ".boot"
@@ -169,6 +175,7 @@
       "clojure"
     ]
   "show-invisibles-plus":
+    borders: {}
     show: false
   "spell-check":
     grammars: [
