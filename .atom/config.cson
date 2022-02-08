@@ -18,7 +18,6 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
-    colorProfile: "srgb"
     disabledPackages: [
       "about"
       "archive-view"
