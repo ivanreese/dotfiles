@@ -176,6 +176,8 @@
   "show-invisibles-plus":
     borders: {}
     show: false
+  sorter:
+    caseSensitive: false
   "spell-check":
     grammars: [
       "text.plain"
