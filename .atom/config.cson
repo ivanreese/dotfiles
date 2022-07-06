@@ -197,7 +197,8 @@
   "tree-view":
     focusOnReveal: false
     hideIgnoredNames: true
-  whitespace: {}
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
 ".basic.html.text":
   editor:
     softWrap: true
