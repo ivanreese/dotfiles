@@ -47,6 +47,9 @@ ssh-keygen -t rsa
 pbcopy < ~/.ssh/id_rsa.pub
 open -a safari https://github.com/settings/ssh
 
+# Install bun
+open -a safari https://github.com/Jarred-Sumner/bun
+
 # On my previous Mac, run this to see all the npm packages I have installed
 npm ls -g --depth=0
 

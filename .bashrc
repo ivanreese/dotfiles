@@ -82,6 +82,10 @@ export PATH="/usr/local/sbin:$PATH"
 # Prepend npm global
 export PATH="$(npm config get prefix):$PATH"
 
+# Prepend bun
+export BUN_INSTALL="~/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # Prepend bins in the pwd
 export PATH=".:$PATH"
 
