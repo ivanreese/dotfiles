@@ -122,7 +122,6 @@ module.exports = {
         coffee: "#834618",
         gulp: "#CF4647",
         irb: "#AE1401",
-        lein: "#4C8",
         rake: "#AE1401",
         rails: "#AE1401",
         shell: "transparent"

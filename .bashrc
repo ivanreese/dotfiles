@@ -28,6 +28,8 @@ alias cdw='cd ~/Work'
 
 # Quick Tools
 alias a="atom ."
+alias c="cake"
+alias cs="cake start"
 alias n="nova ."
 alias r="rails"
 alias rc="rails c"
@@ -35,9 +37,6 @@ alias rspec='rspec -c' # Color
 alias y="yarn"
 alias ys="yarn start"
 alias ye="yarn electron"
-
-# rlwrap figwheel, please
-alias fig='lein clean && rlwrap lein figwheel'
 
 # A nice shortcut for pushing a WIP to github
 alias wip='git aa && git cim "∆" && git push'
@@ -89,9 +88,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Prepend bins in the pwd
 export PATH=".:$PATH"
 
-# Java
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 # Improve coloring?
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 export GREP_OPTIONS="--color"
@@ -104,7 +100,6 @@ export HISTCONTROL=erasedups
 export HISTSIZE=10000
 
 # Set a minimal prompt
-# export PS1="\W 🐌  " # Disabled because https://github.com/zeit/hyper/issues/1857
 export PS1="\W "
 
 # BASH OPTIONS
@@ -145,10 +140,6 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
-
-# Use a custom dist for Electron dev
-export ELECTRON_OVERRIDE_DIST_PATH=~/Work/electron/arm64
 
 
 # FIN

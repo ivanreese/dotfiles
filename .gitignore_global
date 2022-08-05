@@ -47,9 +47,3 @@ Icon
 .env
 .powenv
 secrets.yml
-
-# Clojure #
-###########
-.lein-repl-history
-.nrepl-history
-figwheel_server.log

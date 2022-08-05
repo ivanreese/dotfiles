@@ -96,9 +96,10 @@
       "old-atom-dracula"
     ]
     titleBar: "hidden"
+    useTreeSitterParsers: false
   editor:
     fontFamily: "inconsolata"
-    fontSize: 21
+    fontSize: 22
     preferredLineLength: 200
     scrollPastEnd: true
     tabType: "soft"
