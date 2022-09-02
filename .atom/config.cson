@@ -101,6 +101,7 @@
     fontSize: 22
     preferredLineLength: 200
     scrollPastEnd: true
+    showInvisibles: true
     tabType: "soft"
     undoGroupingInterval: 1
   "exception-reporting":
@@ -111,8 +112,9 @@
   "fuzzy-finder":
     ignoredNames: [
       "node_modules"
-      "cljs-out"
+      "target"
     ]
+    scoringSystem: "alternate"
   "highlight-selected":
     ignoreCase: true
   "line-ending-selector":
@@ -167,7 +169,6 @@
     prettifyOnSaveJSON: true
   "show-invisibles-plus":
     borders: {}
-    show: false
   sorter:
     caseSensitive: false
   "spell-check":
