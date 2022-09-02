@@ -35,12 +35,12 @@ qlmanage -r
 qlmanage -r cache
 
 #X# Change the default shell from system bash to brew bash
-#X# echo "/usr/local/bin/bash" >> /etc/shells
-#X# chsh -s /usr/local/bin/bash
+#X# echo "/opt/homebrew/bin/bash" >> /etc/shells
+#X# chsh -s /opt/homebrew/bin/bash
 #X# # Note that after each macOS update, this is going to create some Relocated Items.
 #X# # I can check them like so to see if Apple changes /etc/shells in a way I care about:
 #X# diff /Users/Shared/Relocated\ Items/Configuration/private/etc/shells.system_default /etc/shells
-# An alternative to the above, just go to System Prefs > Users & Groups and change the default shell to /usr/local/bin/bash
+# An alternative to the above, just go to System Prefs > Users & Groups and change the default shell to /opt/homebrew/bin/bash
 
 # Set up an SSH key
 ssh-keygen -t rsa

@@ -19,12 +19,11 @@ alias cdc='cd ~/Work/visual-programming-codex'
 alias cdd='cd ~/.dotfiles'
 alias cdf='cd ~/Work/futureofcoding.org'
 alias cdh='cd ~/Work/hest/prototypes/009-open'
-alias cdy='cd ~/Work/hyperzine'
 alias cdi='cd ~/Sites/ivanish'
 alias cdl='cd ~/Work/lbs'
 alias cds='cd ~/Sites'
-alias cdv='cd ~/Work/visual-programming-codex'
 alias cdw='cd ~/Work'
+alias cdy='cd ~/Work/hyperzine'
 
 # Quick Tools
 alias a="atom ."
@@ -33,10 +32,6 @@ alias cs="cake start"
 alias n="nova ."
 alias r="rails"
 alias rc="rails c"
-alias rspec='rspec -c' # Color
-alias y="yarn"
-alias ys="yarn start"
-alias ye="yarn electron"
 
 # A nice shortcut for pushing a WIP to github
 alias wip='git aa && git cim "∆" && git push'
@@ -62,9 +57,6 @@ alias gitra='git ra'
 # rbenv: To enable shims and autocompletion
 eval "$(rbenv init -)"
 
-# Rust stuff
-source "$HOME/.cargo/env"
-
 # Append bins in my home
 export PATH="$PATH:~/.bin"
 
@@ -72,18 +64,14 @@ export PATH="$PATH:~/.bin"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 export PGDATA="/Users/admin/Library/Application Support/Postgres/var-14"
 
-# We need to prepend bins in homebrew (even though they're already on the PATH by default) so that brew comes before ruby (so we can use dart sass via brew instead of ruby sass)
-export PATH="/usr/local/bin:$PATH"
+# We need to prepend bins in homebrew so that brew comes before ruby (so we can use dart sass via brew instead of ruby sass)
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 # Prepend sbins in homebrew
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/sbin:/usr/local/sbin:$PATH"
 
 # Prepend npm global
 export PATH="$(npm config get prefix):$PATH"
-
-# Prepend bun
-export BUN_INSTALL="~/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Prepend bins in the pwd
 export PATH=".:$PATH"
@@ -112,14 +100,6 @@ shopt -s nocaseglob
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
-
-# Enable some Bash 4 features when possible:
-# * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
-# * Recursive globbing, e.g. `echo **/*.txt`
-for option in autocd globstar; do
-  shopt -s "$option" 2> /dev/null
-done
-
 
 # Add nice shell titles for Hyper — https://github.com/zeit/hyper/issues/1188#issuecomment-267301723
 case "$TERM" in

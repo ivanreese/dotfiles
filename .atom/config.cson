@@ -85,7 +85,6 @@
       "sort-lines"
       "sorter"
       "spell-check"
-      "proto-repl"
       "Zen"
     ]
     projectHome: "/Users/admin/Work"
@@ -166,14 +165,6 @@
       "source.json"
     ]
     prettifyOnSaveJSON: true
-  "proto-repl":
-    autoPrettyPrint: true
-    clojurePath: "/usr/local/bin/clj"
-    displayHelpText: false
-    openReplInRightPane: false
-    preferredRepl: [
-      "clojure"
-    ]
   "show-invisibles-plus":
     borders: {}
     show: false
