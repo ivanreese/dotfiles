@@ -26,7 +26,7 @@ alias cdw='cd ~/Work'
 alias cdy='cd ~/Work/hyperzine'
 
 # Quick Tools
-alias a="atom ."
+alias a="nova ." # Old habits die hard
 alias c="cake"
 alias cs="cake start"
 alias n="nova ."
