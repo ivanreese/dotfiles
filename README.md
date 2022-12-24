@@ -3,10 +3,6 @@ These are my dotfiles and other stuff I'll want whenever I move in to a fresh sy
 
 ### Pull changes for stuff that might change due to external causes
 ```bash
-cp ~/.atom/config.cson ~/.dotfiles/.atom/config.cson
-cp ~/.atom/init.coffee ~/.dotfiles/.atom/init.coffee
-cp ~/.atom/keymap.cson ~/.dotfiles/.atom/keymap.cson
-cp ~/.atom/styles.less ~/.dotfiles/.atom/styles.less
 cp ~/.hyper.css ~/.dotfiles/.hyper.css
 cp ~/.hyper.js ~/.dotfiles/.hyper.js
 ```
