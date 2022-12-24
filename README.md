@@ -43,32 +43,22 @@ ssh-keygen -t rsa
 pbcopy < ~/.ssh/id_rsa.pub
 open -a safari https://github.com/settings/ssh
 
-# Install bun
-open -a safari https://github.com/Jarred-Sumner/bun
-
 # On my previous Mac, run this to see all the npm packages I have installed
 npm ls -g --depth=0
 
 # Then, install whichever ones I want, such as:
-npm install -g cdig/cli coffeescript gulp-cli surge
-
-# On my previous Mac, run this to see all the atom community packages I have installed
-apm list
-
-# Then, install whichever ones I want, such as:
-apm i auto-update-packages && apm i file-icons && apm i highlight-selected && apm i ivanreese/old-atom-dracula && apm i parinfer && apm i pretty-json && apm i show-invisibles-plus && apm i sorter && apm i tabs-to-spaces
-# (For some dumb reason, we can't just list all the packages like we do for brew and npm. apm says they're installed, but they don't appear in ~/.atom/packages)
+npm install -g cdig coffeescript gulp-cli netlify-cli npm surge
 
 # On my previous Mac, run this to see all the App Store apps I have installed:
 mas list
 
 # Then install whichever ones I want, such as:
-#           Pixelmator, Numbers,  Divvy,    Space Gremlin, Final Cut Pro, Icon Slate, Keka,     iA Writer, Quiver,   xScope,   ColorSnapper2, HyperDither, Pixelmator Pro, Wipr,      Gifski,    Tweetbot,  Drafts
-mas install 407963104   409203825 413857545 414515628      424389933      439697913   470158793 775737590  866773894 889428659 969418666      1110997147   1289583905      1320666476 1351639930 1384080005 1435957248
+#           Numbers   Final Cut Pro Icon Slate Keka      iA Writer Quiver    xScope    HyperDither Pixelmator Pro Wipr       Gifski     Drafts
+mas install 409203825 424389933     439697913  470158793 775737590 866773894 889428659 1110997147  1289583905     1320666476 1351639930 1435957248
 
 # Set up ruby
 rbenv install -l # Figure out which version of ruby is the current
-ruby_version="3.0.1" # Update accordingly
+ruby_version="3.2.0" # Update accordingly
 rbenv install "$ruby_version"
 rbenv global "$ruby_version"
 rbenv shell "$ruby_version"
@@ -101,6 +91,5 @@ sudo mdutil -a -i off
 * Final Cut custom effect presets (audio & video) and workspaces
 
 # Install these
-* Transfer Divvy shortcuts from previous Mac: `divvy://export`
-* Postgres app, and then update `PGDATA` in `.bash_profile` to the right version.
+* Postgres app, and then update `PGDATA` in `.bash_rc` to the right version.
 * All existing SetApp apps
