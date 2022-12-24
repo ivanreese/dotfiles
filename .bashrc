@@ -1,7 +1,3 @@
-# Set up hub
-eval "$(hub alias -s)"
-
-
 # ALIASES
 
 # To ignore an alias... (https://remysharp.com/2018/08/23/cli-improved)
@@ -53,9 +49,6 @@ alias gitra='git ra'
 
 
 # PATHS & VARS
-
-# rbenv: To enable shims and autocompletion
-eval "$(rbenv init -)"
 
 # Append bins in my home
 export PATH="$PATH:~/.bin"
@@ -120,3 +113,9 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+# Set up hub
+eval "$(hub alias -s)"
+
+# rbenv: To enable shims and autocompletion
+eval "$(rbenv init -)"
