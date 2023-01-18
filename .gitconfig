@@ -50,7 +50,7 @@
   tool = vimdiff
 
 [core]
-  editor = atom
+  editor = nova
   excludesfile = ~/.gitignore_global
 
 [credential]

@@ -118,7 +118,7 @@ module.exports = {
 
     tabIcons: {
       mapColors: {
-        atom: "#9BD691",
+        cake: "#834618",
         coffee: "#834618",
         gulp: "#CF4647",
         irb: "#AE1401",
