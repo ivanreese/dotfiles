@@ -6,7 +6,7 @@
 module.exports = {
   config: {
     // Custom
-    scrollback: 10000,
+    scrollback: 100000,
 
     // Choose either "stable" for receiving highly polished,
     // or "canary" for less polished but more frequent updates
