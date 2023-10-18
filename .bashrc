@@ -16,7 +16,7 @@ alias cdd='cd ~/.dotfiles'
 alias cdf='cd ~/Work/futureofcoding.org'
 alias cdh='cd ~/Work/hest/prototypes/009-open'
 alias cdi='cd ~/Sites/ivanish'
-alias cdk='cd ~/Work/Inkling'
+alias cdk='cd ~/Work/Inkling/InkbaseV2'
 alias cds='cd ~/Sites'
 alias cdw='cd ~/Work'
 
