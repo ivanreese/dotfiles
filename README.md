@@ -20,7 +20,7 @@ open -a safari https://brew.sh
 brew leaves
 
 # Then, install whichever ones I want, such as:
-brew install awscli bash bat cloc diff-so-fancy eza fd git hub mas node prettyping rbenv sass/sass/sass yarn
+brew install bash bat cloc diff-so-fancy eza fd git hub mas node prettyping rbenv
 
 # Install qlstephen
 brew install --cask qlstephen

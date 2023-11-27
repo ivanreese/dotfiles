@@ -47,8 +47,8 @@ alias gitra='git ra'
 
 # PATHS & VARS
 
-# We need to prepend bins in homebrew so that brew comes before ruby (so we can use dart sass via brew instead of ruby sass)
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+# Prepend brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Prepend npm global
 export PATH="$(npm config get prefix):$PATH"
