@@ -20,9 +20,7 @@ open -a safari https://brew.sh
 brew leaves
 
 # Then, install whichever ones I want, such as:
-brew install awscli bash bat cloc diff-so-fancy exa fd ffmpeg git hub mas node prettyping rbenv sass/sass/sass yarn
-brew install guetzli imagemagick libdvdcss # Maybe these too?
-brew tap heroku/brew && brew install heroku
+brew install awscli bash bat cloc diff-so-fancy eza fd git hub mas node prettyping rbenv sass/sass/sass yarn
 
 # Install qlstephen
 brew install --cask qlstephen
@@ -47,7 +45,7 @@ open -a safari https://github.com/settings/ssh
 npm ls -g --depth=0
 
 # Then, install whichever ones I want, such as:
-npm install -g cdig coffeescript gulp-cli netlify-cli npm surge
+npm install -g coffeescript netlify-cli npm surge
 
 # On my previous Mac, run this to see all the App Store apps I have installed:
 mas list
@@ -76,9 +74,6 @@ hub clone git@github.com:ivanreese/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 source bootstrap.sh
 
-# If desired, interactively set up my defaults
-bash ivans-defaults.sh
-
 # Disable spotlight
 sudo mdutil -a -i off
 # Also do LaunchBar > Index > Show Index > Applications > Options > Use Spotlight index: off
@@ -88,8 +83,3 @@ sudo mdutil -a -i off
 * ~/Library/Sounds
 * ~/Library/Fonts
 * ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
-* Final Cut custom effect presets (audio & video) and workspaces
-
-# Install these
-* Postgres app, and then update `PGDATA` in `.bash_rc` to the right version.
-* All existing SetApp apps

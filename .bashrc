@@ -7,7 +7,7 @@
 alias cat='bat'
 alias find='fd'
 alias help='tldr'
-alias ls='exa --all --long --color-scale --git'
+alias ls='eza --all --long'
 alias ping='prettyping --nolegend'
 
 # Quick links
