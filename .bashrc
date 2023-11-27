@@ -25,8 +25,6 @@ alias a="code ." # Old habits die hard
 alias c="cake"
 alias cs="cake start"
 alias n="nova ."
-alias r="rails"
-alias rc="rails c"
 
 # A nice shortcut for pushing a WIP to github
 alias wip='git aa && git cim "∆" && git push'
@@ -49,18 +47,8 @@ alias gitra='git ra'
 
 # PATHS & VARS
 
-# Append bins in my home
-export PATH="$PATH:~/.bin"
-
-# Append Postgres.app
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
-export PGDATA="/Users/admin/Library/Application Support/Postgres/var-14"
-
 # We need to prepend bins in homebrew so that brew comes before ruby (so we can use dart sass via brew instead of ruby sass)
-export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
-
-# Prepend sbins in homebrew
-export PATH="/opt/homebrew/sbin:/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # Prepend npm global
 export PATH="$(npm config get prefix):$PATH"
