@@ -1,7 +1,9 @@
 # Dotfiles
+
 These are my dotfiles and other stuff I'll want whenever I move in to a fresh system.
 
 ### Pull changes for stuff that might change due to external causes
+
 ```bash
 cp ~/.hyper.css ~/.dotfiles/.hyper.css
 cp ~/.hyper.js ~/.dotfiles/.hyper.js
@@ -21,6 +23,10 @@ brew leaves
 
 # Then, install whichever ones I want, such as:
 brew install bash bat cloc diff-so-fancy eza fd git hub mas node prettyping rbenv
+
+# Dracula theme for xcode (todo: see if I can install any other Dracula themes via brew)
+brew tap dracula/install
+brew install --cask dracula-xcode
 
 # Install qlstephen
 brew install --cask qlstephen
@@ -80,6 +86,7 @@ sudo mdutil -a -i off
 ```
 
 #### Copy these
-* ~/Library/Sounds
-* ~/Library/Fonts
-* ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
+
+- ~/Library/Sounds
+- ~/Library/Fonts
+- ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
