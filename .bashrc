@@ -22,7 +22,7 @@ alias cds='cd ~/Sites'
 alias cdw='cd ~/Work'
 
 # Quick Tools
-alias a="code ." # Old habits die hard
+alias a="nova ." # Old habits die hard
 alias c="cake"
 alias cs="cake start"
 alias n="nova ."
