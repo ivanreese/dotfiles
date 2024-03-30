@@ -14,7 +14,7 @@ alias ping='prettyping --nolegend'
 alias cdc='cd ~/Work/visual-programming-codex'
 alias cdd='cd ~/.dotfiles'
 alias cdf='cd ~/Work/futureofcoding.org'
-alias cdh='cd ~/Work/hest/prototypes/009-open'
+alias cdh='cd ~/Work/hest/prototypes/010-word'
 alias cdi='cd ~/Sites/ivanish'
 alias cdk='cd ~/Work/Inkling/InkbaseV2'
 alias cdr='cd ~/Sites/raised-sixth'
@@ -81,26 +81,6 @@ shopt -s nocaseglob
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
-
-# Add nice shell titles for Hyper — https://github.com/zeit/hyper/issues/1188#issuecomment-267301723
-case "$TERM" in
-xterm*|rxvt*)
-    PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
-    show_command_in_title_bar()
-    {
-        case "$BASH_COMMAND" in
-            *\033]0*)
-                ;;
-            *)
-                echo -ne "\033]0;${BASH_COMMAND} - ${PWD##*/}\007"
-                ;;
-        esac
-    }
-    trap show_command_in_title_bar DEBUG
-    ;;
-*)
-    ;;
-esac
 
 # Set up hub
 eval "$(hub alias -s)"

@@ -2,13 +2,6 @@
 
 These are my dotfiles and other stuff I'll want whenever I move in to a fresh system.
 
-### Pull changes for stuff that might change due to external causes
-
-```bash
-cp ~/.hyper.css ~/.dotfiles/.hyper.css
-cp ~/.hyper.js ~/.dotfiles/.hyper.js
-```
-
 ### New Machine Setup
 
 ```bash
