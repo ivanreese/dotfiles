@@ -16,14 +16,12 @@ alias cdd='cd ~/.dotfiles'
 alias cdf='cd ~/Work/futureofcoding.org'
 alias cdh='cd ~/Work/hest/prototypes/010-word'
 alias cdi='cd ~/Sites/ivanish'
-alias cdk='cd ~/Work/Inkling/InkbaseV2'
-alias cdr='cd ~/Sites/raised-sixth'
+alias cdp='cd ~/Work/PlayBook/App'
 alias cds='cd ~/Sites'
 alias cdw='cd ~/Work'
 
 # Quick Tools
-alias a="nova ." # Old habits die hard
-alias c="cake"
+alias c="code ."
 alias cs="cake start"
 alias n="nova ."
 
