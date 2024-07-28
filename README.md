@@ -73,3 +73,16 @@ defaults -currentHost write -globalDomain NSStatusItemSpacing -int 12
 - ~/Library/Sounds
 - ~/Library/Fonts
 - ~/Library/Dictionaries/dictd_www.dict.org_web1913.dictionary (from http://jsomers.net/blog/dictionary)
+
+### Ruby?
+
+```bash
+rbenv install -l # Figure out which version of ruby is the current
+ruby_version="3.2.0" # Update accordingly
+rbenv install "$ruby_version"
+# Note: if this errors, run: `brew install libyaml` then try again
+rbenv global "$ruby_version"
+rbenv shell "$ruby_version"
+gem update --system # this also installs bundler
+rbenv rehash
+```
