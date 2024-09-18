@@ -15,9 +15,8 @@ alias cdc='cd ~/Work/visual-programming-codex'
 alias cdd='cd ~/.dotfiles'
 alias cdf='cd ~/Work/futureofcoding.org'
 alias cdh='cd ~/Work/hest/prototypes/010-word'
-alias cdi='cd ~/Sites/ivanish'
+alias cdi='cd ~/Work/ivanish'
 alias cdp='cd ~/Work/PlayBook/App'
-alias cds='cd ~/Sites'
 alias cdw='cd ~/Work'
 
 # Quick Tools
@@ -42,7 +41,6 @@ alias gr='git r'
 alias gitr='git r'
 alias gra='git ra'
 alias gitra='git ra'
-
 
 # PATHS & VARS
 
