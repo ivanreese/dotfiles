@@ -1,12 +1,12 @@
 # ALIASES
 
-# To ignore an alias... (https://remysharp.com/2018/08/23/cli-improved)
-# $ \cat # ignore aliases named "cat" - explanation: https://stackoverflow.com/a/16506263/22617
+# To ignore an alias...
+# $ \cat # ignore aliases named "cat"
 # $ command cat # ignore functions and aliases
 
+# Replace stock bins with better ones
 alias cat='bat'
 alias find='fd'
-alias help='tldr'
 alias ls='eza --all --long'
 alias ping='prettyping --nolegend'
 
@@ -21,7 +21,9 @@ alias cdw='cd ~/Work'
 
 # Quick Tools
 alias c="code ."
+alias cb="cake build"
 alias cs="cake start"
+alias is="i serve"
 alias n="nova ."
 
 # A nice shortcut for pushing a WIP to github
