@@ -26,6 +26,7 @@ alias cb="cake build"
 alias cs="cake start"
 alias is="i serve"
 alias n="nova ."
+alias n="zed ."
 
 # A nice shortcut for pushing a WIP to github
 alias wip='git aa && git cim "∆" && git push'
