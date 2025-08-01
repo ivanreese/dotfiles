@@ -50,7 +50,7 @@
   tool = vimdiff
 
 [core]
-  editor = nova
+  editor = nova --wait
   excludesfile = ~/.gitignore_global
 
 [credential]
