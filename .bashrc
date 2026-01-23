@@ -54,6 +54,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Prepend npm global
 export PATH="$(npm config get prefix):$PATH"
 
+# Prepend user local bins
+export PATH="$HOME/.local/bin:$PATH"
+
 # Prepend manually-installed bins
 export PATH="$HOME/.bin:$PATH"
 
