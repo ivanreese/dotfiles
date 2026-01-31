@@ -56,6 +56,7 @@ export PATH="$(npm config get prefix):$PATH"
 
 # Prepend java and android bullshit
 export ANDROID_HOME="$HOME/.android-sdk"
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
