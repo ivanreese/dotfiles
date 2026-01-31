@@ -54,7 +54,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Prepend npm global
 export PATH="$(npm config get prefix):$PATH"
 
-# Prepend java
+# Prepend java and android bullshit
+export ANDROID_HOME="$HOME/.android-sdk"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # Prepend user local bins
