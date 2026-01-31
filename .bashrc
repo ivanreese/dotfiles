@@ -54,6 +54,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Prepend npm global
 export PATH="$(npm config get prefix):$PATH"
 
+# Prepend java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
 # Prepend user local bins
 export PATH="$HOME/.local/bin:$PATH"
 
