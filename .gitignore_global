@@ -45,3 +45,7 @@ Icon?
 .env
 .powenv
 secrets.yml
+
+# LLM junk #
+############
+.claude
